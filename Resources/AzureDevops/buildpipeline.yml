@@ -1,0 +1,9 @@
+# .NET Standard
+# Build, apply GitVersion to nuget package and run tests.
+
+trigger:
+- master
+
+pool:
+  vmImage: 'windows-latest'
+
