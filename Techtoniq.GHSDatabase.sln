@@ -8,6 +8,10 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Resources", "Resources", "{A7C846D2-3F93-4F53-8F4D-D53CD49D7EF4}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "AzureDevops", "AzureDevops", "{F990D68C-97CB-4600-9A13-347E44C8BB23}"
+	ProjectSection(SolutionItems) = preProject
+		Resources\AzureDevops\buildpipeline.yml = Resources\AzureDevops\buildpipeline.yml
+		Resources\AzureDevops\GitVersion.yml = Resources\AzureDevops\GitVersion.yml
+	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Test", "Test", "{E7473A08-8B66-423F-B830-978080E7D275}"
 EndProject
