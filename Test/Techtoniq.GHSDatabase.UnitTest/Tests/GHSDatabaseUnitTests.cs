@@ -22,8 +22,23 @@ namespace Techtoniq.GHSDatabase.UnitTest
 
                 // Assert.
                 hazard.Should().NotBeNull();
-                hazard.Code.Should().Be("H200");
+                hazard.Class.Should().Be("Explosives");
+                hazard.Categories.Should().HaveCount(1);
+                hazard.Categories[0].Should().Be("Unstable Explosive");
+                hazard.PictogramImage.Should().NotBeNull();
+                hazard.PictogramImage.Length.Should().Be(13128);
+                hazard.SignalWord.Should().Be("Danger");
+                hazard.HCode.Should().Be("H200");
                 hazard.Phrase.Should().Be("Unstable explosive.");
+                hazard.PCodes.Should().HaveCount(8);
+                hazard.PCodes[0].Should().Be("P201");
+                hazard.PCodes[1].Should().Be("P202");
+                hazard.PCodes[2].Should().Be("P281");
+                hazard.PCodes[3].Should().Be("P372");
+                hazard.PCodes[4].Should().Be("P373");
+                hazard.PCodes[5].Should().Be("P380");
+                hazard.PCodes[6].Should().Be("P401");
+                hazard.PCodes[7].Should().Be("P501");
             }
 
             [Test]
@@ -52,8 +67,8 @@ namespace Techtoniq.GHSDatabase.UnitTest
 
                 // Assert.
                 act.Should().Throw<ArgumentException>()
-                    .WithMessage($"Null or empty hazard code.{Environment.NewLine}Parameter name: code")
-                    .And.ParamName.Should().Be("code");                               
+                    .WithMessage($"Null or empty hazard code.{Environment.NewLine}Parameter name: hcode")
+                    .And.ParamName.Should().Be("hcode");                               
             }
 
             [Test]

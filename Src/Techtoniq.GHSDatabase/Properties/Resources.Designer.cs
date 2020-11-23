@@ -61,6 +61,24 @@ namespace Techtoniq.GHSDatabase.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Unstable Explosive.
+        /// </summary>
+        internal static string Category_UnstableExplosive {
+            get {
+                return ResourceManager.GetString("Category_UnstableExplosive", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Explosives.
+        /// </summary>
+        internal static string Class_Explosives {
+            get {
+                return ResourceManager.GetString("Class_Explosives", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized resource of type System.Byte[].
         /// </summary>
         internal static byte[] ghs01 {
@@ -76,6 +94,24 @@ namespace Techtoniq.GHSDatabase.Properties {
         internal static string H200 {
             get {
                 return ResourceManager.GetString("H200", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Danger.
+        /// </summary>
+        internal static string SignalWord_Danger {
+            get {
+                return ResourceManager.GetString("SignalWord_Danger", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Warning.
+        /// </summary>
+        internal static string SignalWord_Warning {
+            get {
+                return ResourceManager.GetString("SignalWord_Warning", resourceCulture);
             }
         }
     }

@@ -2,6 +2,12 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
+    <Authors>Matt Daniels</Authors>
+    <Company>Techtoniq Ltd</Company>
+    <Product>GHS Database</Product>
+    <Description>An in-memory database of hazard codes, phrases, pictograms, labels and other data of the Globally Harmonised System (https://www.hse.gov.uk/chemical-classification/legal/background-directives-ghs.htm) for chemical hazard classification. Use of this project and the data it contains is at your own risk. No warranty is expressed or implied as to the accuracy of the data. Techtoniq Ltd accepts no liability for any loss or damage arising from the use of this project and/or the data it contains.</Description>
+    <Copyright>Copyright (C)2020 Techtoniq Ltd. All rights reserved.</Copyright>
+    <RepositoryUrl>https://github.com/techtoniq/tq-ghsdatabase</RepositoryUrl>
   </PropertyGroup>
 
   <ItemGroup>
