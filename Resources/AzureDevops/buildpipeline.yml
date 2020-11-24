@@ -28,6 +28,16 @@ steps:
     command: 'restore'
     restoreSolution: '$(solution)'
 
+
+- task: SonarCloudPrepare@1
+  displayName: "Preparing Sonar Cloud Analysis"
+  inputs:
+    SonarCloud: 'Sonar Cloud GHS Database Pipeline'
+    organization: 'tq'
+    scannerMode: 'MSBuild'
+    projectKey: 'GHS'
+    projectName: 'GHS Database'
+
 - task: VSBuild@1
   displayName: "Build"
   inputs:
@@ -46,3 +56,10 @@ steps:
       !**\obj\**
     searchFolder: '$(System.DefaultWorkingDirectory)'
 
+- task: SonarCloudAnalyze@1
+  displayName: "Sonar Cloud Analysis"
+
+- task: SonarCloudPublish@1
+  displayName: "Sonar Cloud Publish Result"
+  inputs:
+    pollingTimeoutSec: '300'
