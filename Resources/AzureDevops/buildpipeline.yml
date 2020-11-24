@@ -63,3 +63,4 @@ steps:
   displayName: "Sonar Cloud Publish Result"
   inputs:
     pollingTimeoutSec: '300'
+
