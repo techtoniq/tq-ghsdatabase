@@ -8,23 +8,20 @@ pool:
   vmImage: 'windows-latest'
 
 steps:
-- task: GitVersion@5
-  displayName: "Create GitVersion"
-  inputs:
-    runtime: 'full'
-    configFilePath: 'Resources/AzureDevops/GitVersion.yml'
-    updateAssemblyInfo: true
 
-- task: NuGetToolInstaller@1
-  displayName: "Install tools"
+- task: gitversion/setup@0
+  displayName: "GitVersion setup"
+  inputs:
+    versionSpec: '5.x'
+
+- task: gitversion/execute@0
+  displayName: "GitVersion execute"
 
 - task: NuGetCommand@2
   displayName: "Restore solution"
   inputs:
     command: 'restore'
     restoreSolution: '$(solution)'
-    feedsToUse: 'select'
-    vstsFeed: '117f57af-ea99-4f3e-8e51-a9964ed7af6b/76e0a152-03d9-4a1f-be67-84dfdeef9bc2'
 
 - task: VSBuild@1
   displayName: "Build"
