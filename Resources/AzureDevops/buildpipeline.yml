@@ -7,6 +7,11 @@ trigger:
 pool:
   vmImage: 'windows-latest'
 
+variables:
+  solution: '**/*.sln'
+  buildPlatform: 'Any CPU'
+  buildConfiguration: 'Release'
+
 steps:
 
 - task: gitversion/setup@0
