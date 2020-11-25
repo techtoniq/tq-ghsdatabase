@@ -7,7 +7,7 @@ A C# in-memory database of hazard codes, phrases, pictograms, labels and other d
 ## Example Usage
 
 ```c#
-  IGHSDatabase ghsdb = new GHSDatabase();
+  IGhsDatabase ghsdb = new GhsDatabase();
   IHazard hazard = ghsdb.Get("H200");
 
   MemoryStream ms = new MemoryStream(hazard.PictogramImage);
