@@ -2,9 +2,9 @@
 
 namespace Techtoniq.GHSDatabase
 {
-    public interface IGHSDatabase
+    public interface IGhsDatabase
     {
-        IHazard Get(string code, string cultureName = "en");
+        IHazard Get(string hCode, string cultureName = "en");
         IList<IHazard> GetAll(string cultureName = "en");
     }
 }

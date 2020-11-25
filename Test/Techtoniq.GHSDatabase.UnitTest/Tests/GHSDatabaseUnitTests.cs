@@ -4,8 +4,8 @@ using NUnit.Framework;
 
 namespace Techtoniq.GHSDatabase.UnitTest
 {
-    [TestFixture(TestOf = typeof(GHSDatabase))]
-    public class GHSDatabaseUnitTests
+    [TestFixture(TestOf = typeof(GhsDatabase))]
+    public class GhsDatabaseUnitTests
     {
         [TestFixture(Description = "Get() method tests")]
         public class Get
@@ -15,7 +15,7 @@ namespace Techtoniq.GHSDatabase.UnitTest
             {
                 // Arrange.
 
-                IGHSDatabase unit = new GHSDatabase();
+                IGhsDatabase unit = new GhsDatabase();
 
                 // Act.
                 var hazard = unit.Get("H200");
@@ -46,7 +46,7 @@ namespace Techtoniq.GHSDatabase.UnitTest
             {
                 // Arrange.
 
-                IGHSDatabase unit = new GHSDatabase();
+                IGhsDatabase unit = new GhsDatabase();
 
                 // Act.
                 var hazard = unit.Get("wibble");
@@ -60,15 +60,15 @@ namespace Techtoniq.GHSDatabase.UnitTest
             {
                 // Arrange.
 
-                IGHSDatabase unit = new GHSDatabase();
+                IGhsDatabase unit = new GhsDatabase();
 
                 // Act.
                 Action act = () => { var hazard = unit.Get(null); };
 
                 // Assert.
                 act.Should().Throw<ArgumentException>()
-                    .WithMessage($"Null or empty hazard code.{Environment.NewLine}Parameter name: hcode")
-                    .And.ParamName.Should().Be("hcode");                               
+                    .WithMessage($"Null or empty hazard code.{Environment.NewLine}Parameter name: hCode")
+                    .And.ParamName.Should().Be("hCode");                               
             }
 
             [Test]
@@ -76,7 +76,7 @@ namespace Techtoniq.GHSDatabase.UnitTest
             {
                 // Arrange.
 
-                IGHSDatabase unit = new GHSDatabase();
+                IGhsDatabase unit = new GhsDatabase();
 
                 // Act.
                 Action act = () => { var hazard = unit.Get("H200", null); };

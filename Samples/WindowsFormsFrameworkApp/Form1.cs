@@ -15,7 +15,7 @@ namespace WindowsFormsFrameworkApp
 
         private void OnButtonSearchClick(object sender, EventArgs e)
         {
-            IGHSDatabase db = new GHSDatabase();
+            IGhsDatabase db = new GhsDatabase();
             IHazard hazard = db.Get(uxTextCodeValue.Text, uxTextCultureValue.Text);
 
             if (null == hazard)
