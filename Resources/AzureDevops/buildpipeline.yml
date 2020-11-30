@@ -59,25 +59,21 @@ steps:
     arguments: 'install --global dotnet-reportgenerator-globaltool'
 
 
-- task: DotNetCoreCLI@2
-  displayName: 'Run unit tests on Tests - $(configuration)'
+- task: VSTest@2
+  displayName: "Test"
   inputs:
-    command: test
-    arguments: '--no-build /p:CollectCoverage=true /p:CoverletOutput=../TestResults/Coverage/ /p:CoverletOutputFormat="cobertura"'
-    projects: '**/*UnitTest.csproj'
-    configuration: $(configuration)
-    publishTestResults: true
+    testSelector: 'testAssemblies'
+    testAssemblyVer2: |
+      **\*test*.dll
+      !**\*TestAdapter.dll
+      !**\obj\**
+    searchFolder: '$(System.DefaultWorkingDirectory)'
 
-- script: |
-    reportgenerator -reports:"$(Build.SourcesDirectory)/**/coverage.cobertura.xml" -targetdir:$(Build.SourcesDirectory)/CodeCoverage -reporttypes:HtmlInline_AzurePipelines
-  displayName: 'Create code coverage report'
-
-- task: PublishCodeCoverageResults@1
-  displayName: 'Publish code coverage report'
-  inputs:
-    codeCoverageTool: 'cobertura'
-    summaryFileLocation: '$(Build.SourcesDirectory)/**/coverage.cobertura.xml'
-    
 - task: SonarCloudAnalyze@1
   displayName: "Sonar Cloud Analysis"
+
+- task: SonarCloudPublish@1
+  displayName: "Sonar Cloud Publish Result"
+  inputs:
+    pollingTimeoutSec: '300'
 
