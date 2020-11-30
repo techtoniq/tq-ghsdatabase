@@ -26,6 +26,13 @@ steps:
 
 - task: gitversion/execute@0
   displayName: "GitVersion execute"
+  inputs:
+    useConfigFile: true
+    configFilePath: 'Resources/AzureDevops/GitVersion.yml'
+    
+- task: NuGetToolInstaller@1
+  displayName: "Install tools"
+
 
 - task: NuGetCommand@2
   displayName: "Restore solution"
