@@ -126,6 +126,15 @@
   <data name="Category_Div1_3" xml:space="preserve">
     <value>Div 1.3</value>
   </data>
+  <data name="Category_Div1_4" xml:space="preserve">
+    <value>Div 1.4</value>
+  </data>
+  <data name="Category_Div1_5" xml:space="preserve">
+    <value>Div 1.5</value>
+  </data>
+  <data name="Category_Div1_6" xml:space="preserve">
+    <value>Div 1.6</value>
+  </data>
   <data name="Category_UnstableExplosive" xml:space="preserve">
     <value>Unstable Explosive</value>
   </data>

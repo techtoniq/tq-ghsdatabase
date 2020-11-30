@@ -88,6 +88,33 @@ namespace Techtoniq.GHSDatabase.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Div 1.4.
+        /// </summary>
+        internal static string Category_Div1_4 {
+            get {
+                return ResourceManager.GetString("Category_Div1_4", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Div 1.5.
+        /// </summary>
+        internal static string Category_Div1_5 {
+            get {
+                return ResourceManager.GetString("Category_Div1_5", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Div 1.6.
+        /// </summary>
+        internal static string Category_Div1_6 {
+            get {
+                return ResourceManager.GetString("Category_Div1_6", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Unstable Explosive.
         /// </summary>
         internal static string Category_UnstableExplosive {
