@@ -130,6 +130,12 @@
   <data name="H200" xml:space="preserve">
     <value>Unstable explosive.</value>
   </data>
+  <data name="H201" xml:space="preserve">
+    <value>Explosive; mass explosion hazard</value>
+  </data>
+  <data name="H202" xml:space="preserve">
+    <value>Explosive; severe projection hazard</value>
+  </data>
   <data name="SignalWord_Danger" xml:space="preserve">
     <value>Danger</value>
   </data>

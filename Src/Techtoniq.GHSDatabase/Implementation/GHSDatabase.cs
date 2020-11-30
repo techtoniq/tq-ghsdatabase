@@ -12,6 +12,7 @@ namespace Techtoniq.GHSDatabase
         {
             { "H200", new Hazard(HazardClass.Explosives, new HazardCategory[]{ HazardCategory.UnstableExplosive}, Properties.Resources.ghs01, SignalWord.Danger, new string[]{"P201", "P202", "P281", "P372", "P373", "P380", "P401", "P501" }) },
             { "H201", new Hazard(HazardClass.Explosives, new HazardCategory[]{ HazardCategory.Div1_1}, Properties.Resources.ghs01, SignalWord.Danger, new string[]{"P210", "P230", "P240", "P250", "P280", "P370+P380", "P372", "P373", "P401", "P501" }) },
+            { "H202", new Hazard(HazardClass.Explosives, new HazardCategory[]{ HazardCategory.Div1_2}, Properties.Resources.ghs01, SignalWord.Danger, new string[]{"P210", "P230", "P240", "P250", "P280", "P370+P380", "P372", "P373", "P401", "P501" }) },
         };
 
         private readonly ResourceManager _resourceManager = new ResourceManager("Techtoniq.GHSDatabase.Properties.Resources", Assembly.GetExecutingAssembly());

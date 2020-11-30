@@ -98,6 +98,24 @@ namespace Techtoniq.GHSDatabase.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Explosive; mass explosion hazard.
+        /// </summary>
+        internal static string H201 {
+            get {
+                return ResourceManager.GetString("H201", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Explosive; severe projection hazard.
+        /// </summary>
+        internal static string H202 {
+            get {
+                return ResourceManager.GetString("H202", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Danger.
         /// </summary>
         internal static string SignalWord_Danger {
