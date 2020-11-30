@@ -197,6 +197,24 @@ namespace Techtoniq.GHSDatabase.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to If medical advice is needed,have product container or label at hand..
+        /// </summary>
+        internal static string P101 {
+            get {
+                return ResourceManager.GetString("P101", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Keep out of reach of children..
+        /// </summary>
+        internal static string P102 {
+            get {
+                return ResourceManager.GetString("P102", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Danger.
         /// </summary>
         internal static string SignalWord_Danger {

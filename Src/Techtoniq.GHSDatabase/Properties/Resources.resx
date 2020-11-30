@@ -163,6 +163,12 @@
   <data name="H205" xml:space="preserve">
     <value>May mass explode in fire</value>
   </data>
+  <data name="P101" xml:space="preserve">
+    <value>If medical advice is needed,have product container or label at hand.</value>
+  </data>
+  <data name="P102" xml:space="preserve">
+    <value>Keep out of reach of children.</value>
+  </data>
   <data name="SignalWord_Danger" xml:space="preserve">
     <value>Danger</value>
   </data>
