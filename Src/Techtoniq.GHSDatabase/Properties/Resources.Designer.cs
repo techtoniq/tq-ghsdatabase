@@ -61,6 +61,33 @@ namespace Techtoniq.GHSDatabase.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Div 1.1.
+        /// </summary>
+        internal static string Category_Div1_1 {
+            get {
+                return ResourceManager.GetString("Category_Div1_1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Div 1.2.
+        /// </summary>
+        internal static string Category_Div1_2 {
+            get {
+                return ResourceManager.GetString("Category_Div1_2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Div 1.3.
+        /// </summary>
+        internal static string Category_Div1_3 {
+            get {
+                return ResourceManager.GetString("Category_Div1_3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Unstable Explosive.
         /// </summary>
         internal static string Category_UnstableExplosive {
@@ -112,6 +139,15 @@ namespace Techtoniq.GHSDatabase.Properties {
         internal static string H202 {
             get {
                 return ResourceManager.GetString("H202", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Explosive; fire, blast or projection hazard.
+        /// </summary>
+        internal static string H203 {
+            get {
+                return ResourceManager.GetString("H203", resourceCulture);
             }
         }
         

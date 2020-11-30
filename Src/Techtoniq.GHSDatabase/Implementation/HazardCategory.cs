@@ -4,6 +4,7 @@
     {
         UnstableExplosive,
         Div1_1,
-        Div1_2
+        Div1_2,
+        DiV1_3
     }
 }
