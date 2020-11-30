@@ -66,6 +66,7 @@ steps:
     arguments: '--no-build /p:CollectCoverage=true /p:CoverletOutput=../TestResults/Coverage/ /p:CoverletOutputFormat="cobertura"'
     projects: '**/*UnitTest.csproj'
     configuration: $(configuration)
+    publishTestResults: true
 
 - script: |
     reportgenerator -reports:"$(Build.SourcesDirectory)/**/coverage.cobertura.xml" -targetdir:$(Build.SourcesDirectory)/CodeCoverage -reporttypes:HtmlInline_AzurePipelines
