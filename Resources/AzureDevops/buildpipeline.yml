@@ -59,37 +59,24 @@ steps:
     arguments: 'install --global dotnet-reportgenerator-globaltool'
 
 
-- task: VSTest@2
-  displayName: "Test"
+- task: DotNetCoreCLI@2
+  displayName: 'Run unit tests on Tests - $(configuration)'
   inputs:
-    testSelector: 'testAssemblies'
-    testAssemblyVer2: |
-      **\*test*.dll
-      !**\*TestAdapter.dll
-      !**\obj\**
-    searchFolder: '$(System.DefaultWorkingDirectory)'
-    codeCoverageEnabled: true
+    command: test
+    arguments: '--no-build /p:CollectCoverage=true /p:CoverletOutput=../TestResults/Coverage/'
+    projects: '**/*UnitTest.csproj'
+    configuration: $(configuration)
 
+- script: |
+    reportgenerator -reports:"$(Build.SourcesDirectory)/**/coverage.cobertura.xml" -targetdir:$(Build.SourcesDirectory)/CodeCoverage -reporttypes:HtmlInline_AzurePipelines
+  displayName: 'Create code coverage report'
+
+- task: PublishCodeCoverageResults@1
+  displayName: 'Publish code coverage report'
+  inputs:
+    codeCoverageTool: 'cobertura'
+    summaryFileLocation: '$(Build.SourcesDirectory)/**/coverage.cobertura.xml'
+    
 - task: SonarCloudAnalyze@1
   displayName: "Sonar Cloud Analysis"
 
-- task: SonarCloudPublish@1
-  displayName: "Sonar Cloud Publish Result"
-  inputs:
-    pollingTimeoutSec: '300'
-
-- task: DotNetCoreCLI@2
-  displayName: "Pack"
-  inputs:
-    command: 'pack'
-    packagesToPack: '**\Techtoniq.GHSDatabase.csproj;!**\*.UnitTest.csproj'
-    versioningScheme: 'byEnvVar'
-    versionEnvVar: GitVersion.NuGetVersion
-
-- task: NuGetCommand@2
-  displayName: 'Deploy'
-  inputs:
-    command: 'push'
-    packagesToPush: '$(Build.ArtifactStagingDirectory)/**/*.nupkg;!$(Build.ArtifactStagingDirectory)/**/*.symbols.nupkg'
-    nuGetFeedType: 'internal'
-    publishVstsFeed: '79b13429-bc95-4429-80ee-3436bb9ed2f3'
