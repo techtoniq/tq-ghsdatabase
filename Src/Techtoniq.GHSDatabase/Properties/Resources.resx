@@ -157,6 +157,12 @@
   <data name="H203" xml:space="preserve">
     <value>Explosive; fire, blast or projection hazard</value>
   </data>
+  <data name="H204" xml:space="preserve">
+    <value>Fire or projection hazard</value>
+  </data>
+  <data name="H205" xml:space="preserve">
+    <value>May mass explode in fire</value>
+  </data>
   <data name="SignalWord_Danger" xml:space="preserve">
     <value>Danger</value>
   </data>
