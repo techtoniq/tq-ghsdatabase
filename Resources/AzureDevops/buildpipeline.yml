@@ -26,7 +26,9 @@ steps:
 
 - task: gitversion/execute@0
   displayName: "GitVersion execute"
-    
+  inputs:
+    useConfigFile: true
+
 - task: NuGetToolInstaller@1
   displayName: "Install tools"
 
