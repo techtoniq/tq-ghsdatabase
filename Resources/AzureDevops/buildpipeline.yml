@@ -73,7 +73,7 @@ steps:
   displayName: "Pack"
   inputs:
     command: 'pack'
-    packagesToPack: '**\*.csproj;!**\*.UnitTest.csproj'
+    packagesToPack: '**\Techtoniq.GHSDatabase.csproj;!**\*.UnitTest.csproj'
     versioningScheme: 'byEnvVar'
     versionEnvVar: GitVersion.NuGetVersion
 
