@@ -63,7 +63,7 @@ steps:
   displayName: 'Run unit tests on Tests - $(configuration)'
   inputs:
     command: test
-    arguments: '--no-build /p:CollectCoverage=true /p:CoverletOutput=../TestResults/Coverage/'
+    arguments: '--no-build /p:CollectCoverage=true /p:CoverletOutput=../TestResults/Coverage/ /p:CoverletOutputFormat="cobertura"'
     projects: '**/*UnitTest.csproj'
     configuration: $(configuration)
 
