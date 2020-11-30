@@ -87,5 +87,24 @@ namespace Techtoniq.GHSDatabase.UnitTest
                     .And.ParamName.Should().Be("cultureName");
             }
         }
+
+        [TestFixture(Description = "GetAll() method tests")]
+        public class GetAll
+        {
+            [Test]
+            public void When_HazardsExist_Then_ReturnHazardList()
+            {
+                // Arrange.
+
+                IGhsDatabase unit = new GhsDatabase();
+
+                // Act.
+                var hazards = unit.GetAll();
+
+                // Assert.
+                hazards.Should().NotBeNull();
+                hazards.Should().HaveCount(1);
+            }
+        }
     }
 }
