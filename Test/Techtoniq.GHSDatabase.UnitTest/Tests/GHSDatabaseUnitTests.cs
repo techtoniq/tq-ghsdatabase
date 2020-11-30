@@ -67,7 +67,7 @@ namespace Techtoniq.GHSDatabase.UnitTest
 
                 // Assert.
                 act.Should().Throw<ArgumentException>()
-                    .WithMessage($"Null or empty hazard code.{Environment.NewLine}Parameter name: hCode")
+                    .WithMessage($"Null or empty hazard code. (Parameter 'hCode')")
                     .And.ParamName.Should().Be("hCode");                               
             }
 
@@ -83,7 +83,7 @@ namespace Techtoniq.GHSDatabase.UnitTest
 
                 // Assert.
                 act.Should().Throw<ArgumentException>()
-                    .WithMessage($"Null or empty culture name.{Environment.NewLine}Parameter name: cultureName")
+                    .WithMessage($"Null or empty culture name. (Parameter 'cultureName')")
                     .And.ParamName.Should().Be("cultureName");
             }
         }

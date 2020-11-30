@@ -21,13 +21,13 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowsFormsFrameworkApp", 
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Techtoniq.GHSDatabase", "Src\Techtoniq.GHSDatabase\Techtoniq.GHSDatabase.csproj", "{1DA93207-5282-484A-B87A-2870DFE223E1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Techtoniq.GHSDatabase.UnitTest", "Test\Techtoniq.GHSDatabase.UnitTest\Techtoniq.GHSDatabase.UnitTest.csproj", "{E14011B0-14CF-4114-B1AB-8C1828E43C1A}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "_Solution Items", "_Solution Items", "{A9750707-908E-4D34-94CF-AABBA5A1AD07}"
 	ProjectSection(SolutionItems) = preProject
 		.gitignore = .gitignore
 		ReadMe.md = ReadMe.md
 	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Techtoniq.GHSDatabase.UnitTest", "Test\Techtoniq.GHSDatabase.UnitTest\Techtoniq.GHSDatabase.UnitTest.csproj", "{E16DC3BE-C0A4-4432-BDE2-F2D47845B0B3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -43,10 +43,10 @@ Global
 		{1DA93207-5282-484A-B87A-2870DFE223E1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1DA93207-5282-484A-B87A-2870DFE223E1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1DA93207-5282-484A-B87A-2870DFE223E1}.Release|Any CPU.Build.0 = Release|Any CPU
-		{E14011B0-14CF-4114-B1AB-8C1828E43C1A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{E14011B0-14CF-4114-B1AB-8C1828E43C1A}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{E14011B0-14CF-4114-B1AB-8C1828E43C1A}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{E14011B0-14CF-4114-B1AB-8C1828E43C1A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E16DC3BE-C0A4-4432-BDE2-F2D47845B0B3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E16DC3BE-C0A4-4432-BDE2-F2D47845B0B3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E16DC3BE-C0A4-4432-BDE2-F2D47845B0B3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E16DC3BE-C0A4-4432-BDE2-F2D47845B0B3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -55,7 +55,7 @@ Global
 		{F990D68C-97CB-4600-9A13-347E44C8BB23} = {A7C846D2-3F93-4F53-8F4D-D53CD49D7EF4}
 		{D4E60DA8-73D9-4D91-8707-1F9B54F43E79} = {DBA1D437-A4E5-4645-8EDE-BAAD968FF3D8}
 		{1DA93207-5282-484A-B87A-2870DFE223E1} = {02DA9505-BA36-4E14-BD4B-0622AB77B59C}
-		{E14011B0-14CF-4114-B1AB-8C1828E43C1A} = {E7473A08-8B66-423F-B830-978080E7D275}
+		{E16DC3BE-C0A4-4432-BDE2-F2D47845B0B3} = {E7473A08-8B66-423F-B830-978080E7D275}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {351D545D-55F6-4FE1-980B-6C5F3DAB7E42}
