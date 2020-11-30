@@ -51,6 +51,14 @@ steps:
     platform: '$(buildPlatform)'
     configuration: '$(buildConfiguration)'
 
+- task: DotNetCoreCLI@2
+  displayName: 'Install Report Generator tool'
+  inputs:
+    command: custom
+    custom: tool
+    arguments: 'install --global dotnet-reportgenerator-globaltool'
+
+
 - task: VSTest@2
   displayName: "Test"
   inputs:
@@ -60,6 +68,7 @@ steps:
       !**\*TestAdapter.dll
       !**\obj\**
     searchFolder: '$(System.DefaultWorkingDirectory)'
+    codeCoverageEnabled: true
 
 - task: SonarCloudAnalyze@1
   displayName: "Sonar Cloud Analysis"
