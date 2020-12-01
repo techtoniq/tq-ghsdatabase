@@ -31,5 +31,11 @@ namespace Techtoniq.GHSDatabase
             return _resourceManager.GetString(hCode, cultureInfo);
         }
 
+        public static string GetPCodePhraseString(string pCode, CultureInfo cultureInfo)
+        {
+            return _resourceManager.GetString(pCode, cultureInfo);
+        }
+        
+
     }
 }

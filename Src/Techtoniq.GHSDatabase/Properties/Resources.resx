@@ -184,6 +184,30 @@
   <data name="P103" xml:space="preserve">
     <value>Read label before use.</value>
   </data>
+  <data name="P201" xml:space="preserve">
+    <value>Obtain special instructions before use.</value>
+  </data>
+  <data name="P202" xml:space="preserve">
+    <value>Do not handle until all safety precautions have been read and understood.</value>
+  </data>
+  <data name="P281" xml:space="preserve">
+    <value>Use personal protective equipment as required.</value>
+  </data>
+  <data name="P372" xml:space="preserve">
+    <value>Explosion risk incase of fire.</value>
+  </data>
+  <data name="P373" xml:space="preserve">
+    <value>DO NOT fight fire when fire reaches explosives.</value>
+  </data>
+  <data name="P380" xml:space="preserve">
+    <value>Evacuate area.</value>
+  </data>
+  <data name="P401" xml:space="preserve">
+    <value>Store ...</value>
+  </data>
+  <data name="P501" xml:space="preserve">
+    <value>Dispose of contents/container to ...</value>
+  </data>
   <data name="SignalWord_Danger" xml:space="preserve">
     <value>Danger</value>
   </data>

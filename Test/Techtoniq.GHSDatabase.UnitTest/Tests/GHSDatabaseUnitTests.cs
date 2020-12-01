@@ -30,17 +30,25 @@ namespace Techtoniq.GHSDatabase.UnitTest
                 hazard.PictogramImage.Should().NotBeNull();
                 hazard.PictogramImage.Length.Should().Be(13128);
                 hazard.SignalWord.Should().Be("Danger");
-                hazard.HCode.Should().Be("H200");
+                hazard.Code.Should().Be("H200");
                 hazard.Phrase.Should().Be("Unstable explosive.");
                 hazard.PCodes.Should().HaveCount(8);
-                hazard.PCodes[0].Should().Be("P201");
-                hazard.PCodes[1].Should().Be("P202");
-                hazard.PCodes[2].Should().Be("P281");
-                hazard.PCodes[3].Should().Be("P372");
-                hazard.PCodes[4].Should().Be("P373");
-                hazard.PCodes[5].Should().Be("P380");
-                hazard.PCodes[6].Should().Be("P401");
-                hazard.PCodes[7].Should().Be("P501");
+                hazard.PCodes[0].Code.Should().Be("P201");
+                hazard.PCodes[0].Phrase.Should().Be("Obtain special instructions before use.");
+                hazard.PCodes[1].Code.Should().Be("P202");
+                hazard.PCodes[1].Phrase.Should().Be("Do not handle until all safety precautions have been read and understood.");
+                hazard.PCodes[2].Code.Should().Be("P281");
+                hazard.PCodes[2].Phrase.Should().Be("Use personal protective equipment as required.");
+                hazard.PCodes[3].Code.Should().Be("P372");
+                hazard.PCodes[3].Phrase.Should().Be("Explosion risk incase of fire.");
+                hazard.PCodes[4].Code.Should().Be("P373");
+                hazard.PCodes[4].Phrase.Should().Be("DO NOT fight fire when fire reaches explosives.");
+                hazard.PCodes[5].Code.Should().Be("P380");
+                hazard.PCodes[5].Phrase.Should().Be("Evacuate area.");
+                hazard.PCodes[6].Code.Should().Be("P401");
+                hazard.PCodes[6].Phrase.Should().Be("Store ...");
+                hazard.PCodes[7].Code.Should().Be("P501");
+                hazard.PCodes[7].Phrase.Should().Be("Dispose of contents/container to ...");
             }
 
             [Test]
@@ -73,8 +81,8 @@ namespace Techtoniq.GHSDatabase.UnitTest
                 // Assert.
 
                 act.Should().Throw<ArgumentException>()
-                    .WithMessage($"Null or empty hazard code. (Parameter 'hCode')")
-                    .And.ParamName.Should().Be("hCode");                               
+                    .WithMessage($"Null or empty hazard code. (Parameter 'code')")
+                    .And.ParamName.Should().Be("code");                               
             }
 
             [Test]

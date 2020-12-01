@@ -8,8 +8,8 @@ namespace Techtoniq.GHSDatabase
         IList<string> Categories { get; }
         byte[] PictogramImage { get; set; }
         string SignalWord { get; set; }
-        string HCode { get; set; }
+        string Code { get; set; }
         string Phrase { get; set; }
-        IList<string> PCodes { get; }
+        IList<IPCode> PCodes { get; }
     }
 }

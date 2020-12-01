@@ -260,6 +260,78 @@ namespace Techtoniq.GHSDatabase.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Obtain special instructions before use..
+        /// </summary>
+        internal static string P201 {
+            get {
+                return ResourceManager.GetString("P201", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Do not handle until all safety precautions have been read and understood..
+        /// </summary>
+        internal static string P202 {
+            get {
+                return ResourceManager.GetString("P202", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Use personal protective equipment as required..
+        /// </summary>
+        internal static string P281 {
+            get {
+                return ResourceManager.GetString("P281", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Explosion risk incase of fire..
+        /// </summary>
+        internal static string P372 {
+            get {
+                return ResourceManager.GetString("P372", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to DO NOT fight fire when fire reaches explosives..
+        /// </summary>
+        internal static string P373 {
+            get {
+                return ResourceManager.GetString("P373", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Evacuate area..
+        /// </summary>
+        internal static string P380 {
+            get {
+                return ResourceManager.GetString("P380", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Store ....
+        /// </summary>
+        internal static string P401 {
+            get {
+                return ResourceManager.GetString("P401", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Dispose of contents/container to ....
+        /// </summary>
+        internal static string P501 {
+            get {
+                return ResourceManager.GetString("P501", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Danger.
         /// </summary>
         internal static string SignalWord_Danger {
