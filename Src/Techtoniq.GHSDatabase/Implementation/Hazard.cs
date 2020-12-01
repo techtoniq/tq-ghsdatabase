@@ -4,16 +4,16 @@ namespace Techtoniq.GHSDatabase
 {
     public class Hazard : IHazard
     {
-        public string Code { get; set; }
-        public string Phrase { get; set; }
-        public byte[] PictogramImage { get; set; }
-        public IList<IPCode> PCodes { get; set; }
-        public string SignalWord { get; set; }
+        public string Code { get; internal set; }
+        public string Phrase { get; internal set; }
+        public byte[] PictogramImage { get; }
+        public IList<IPCode> PCodes { get; }
+        public string SignalWord { get; internal set; }
         public IList<string> Categories { get; }
-        public string Class { get; set; }        
-        internal HazardClass ClassKey { get; set; }
-        internal IList<HazardCategory> CategoryKeys { get; set; }
-        internal SignalWord SignalWordKey { get; set; }
+        public string Class { get; internal set; }        
+        internal HazardClass ClassKey { get; }
+        internal IList<HazardCategory> CategoryKeys { get; }
+        internal SignalWord SignalWordKey { get; }
 
         internal Hazard(HazardClass classKey, IList<HazardCategory> categoryKeys, byte[] pictogramImage, SignalWord signalWordKey, IList<IPCode> pCodes)
         {

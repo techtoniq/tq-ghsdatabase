@@ -4,12 +4,12 @@ namespace Techtoniq.GHSDatabase
 {
     public interface IHazard
     {
-        string Class { get; set; }
+        string Class { get; }
         IList<string> Categories { get; }
-        byte[] PictogramImage { get; set; }
-        string SignalWord { get; set; }
-        string Code { get; set; }
-        string Phrase { get; set; }
+        byte[] PictogramImage { get; }
+        string SignalWord { get; }
+        string Code { get; }
+        string Phrase { get; }
         IList<IPCode> PCodes { get; }
     }
 }
