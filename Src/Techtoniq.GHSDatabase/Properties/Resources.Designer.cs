@@ -215,6 +215,15 @@ namespace Techtoniq.GHSDatabase.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Read label before use..
+        /// </summary>
+        internal static string P103 {
+            get {
+                return ResourceManager.GetString("P103", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Danger.
         /// </summary>
         internal static string SignalWord_Danger {
