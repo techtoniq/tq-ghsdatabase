@@ -4,7 +4,7 @@ namespace Techtoniq.GHSDatabase
 {
     public interface IGhsDatabase
     {
-        IHazard Get(string hCode, string cultureName = "en");
+        IHazard Get(string code, string cultureName = "en");
         IList<IHazard> GetAll(string cultureName = "en");
     }
 }
