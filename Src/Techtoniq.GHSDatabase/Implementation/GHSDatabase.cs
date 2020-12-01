@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Globalization;
+using System.Linq;
 
 namespace Techtoniq.GHSDatabase
 {
@@ -55,7 +56,7 @@ namespace Techtoniq.GHSDatabase
                 all.Add(Get(hazard.Key, cultureName));
             }
 
-            return all;
+            return all.OrderBy(h => h.HCode).ToList();
         }
     }
 }
