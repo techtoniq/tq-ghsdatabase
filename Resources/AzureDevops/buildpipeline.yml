@@ -7,7 +7,7 @@ trigger:
     - master
   paths:
     exclude:
-    - ReadMe.md; .gitignore; /Resources/AzureDevops/buildpipeline.yml;
+    - ReadMe.md; .gitignore; \Resources\AzureDevops\buildpipeline.yml;
 
 pool:
   vmImage: 'windows-latest'
@@ -28,6 +28,7 @@ steps:
   displayName: "GitVersion execute"
   inputs:
     useConfigFile: true
+    configFilePath: '\Resources\AzureDevops\GitVersion.yml'
 
 - task: NuGetToolInstaller@1
   displayName: "Install tools"
