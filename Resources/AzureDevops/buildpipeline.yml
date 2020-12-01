@@ -7,7 +7,9 @@ trigger:
     - master
   paths:
     exclude:
-    - ReadMe.md; .gitignore; .\Resources\AzureDevops\buildpipeline.yml;
+    - ReadMe.md
+    - .gitignore
+    - ./Resources/AzureDevops/buildpipeline.yml
 
 pool:
   vmImage: 'windows-latest'
