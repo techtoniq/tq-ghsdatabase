@@ -9,7 +9,7 @@ trigger:
     exclude:
     - ReadMe.md
     - .gitignore
-    - ./Resources/AzureDevops/buildpipeline.yml
+    - Resources/AzureDevops/buildpipeline.yml
 
 pool:
   vmImage: 'windows-latest'
