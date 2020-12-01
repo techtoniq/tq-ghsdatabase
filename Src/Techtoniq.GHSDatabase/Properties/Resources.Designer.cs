@@ -278,11 +278,76 @@ namespace Techtoniq.GHSDatabase.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Keep away from heat/sparks/open flames/hot surfaces. — No smoking..
+        /// </summary>
+        internal static string P210 {
+            get {
+                return ResourceManager.GetString("P210", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Keep wetted with ....
+        /// </summary>
+        internal static string P230 {
+            get {
+                return ResourceManager.GetString("P230", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Keep only in original container..
+        /// </summary>
+        internal static string P234 {
+            get {
+                return ResourceManager.GetString("P234", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Ground/bond container and receiving equipment..
+        /// </summary>
+        internal static string P240 {
+            get {
+                return ResourceManager.GetString("P240", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Do not subject to grinding/shock/ ... /friction..
+        /// </summary>
+        internal static string P250 {
+            get {
+                return ResourceManager.GetString("P250", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Wear protective gloves/protective clothing/eye protection/face
+        ///prWear protective gloves/protective clothing/eye protection/face
+        ///Wear protective gloves/protective clothing/eye protection/face protection..
+        /// </summary>
+        internal static string P280 {
+            get {
+                return ResourceManager.GetString("P280", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Use personal protective equipment as required..
         /// </summary>
         internal static string P281 {
             get {
                 return ResourceManager.GetString("P281", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to In case of fire:.
+        /// </summary>
+        internal static string P370 {
+            get {
+                return ResourceManager.GetString("P370", resourceCulture);
             }
         }
         
@@ -301,6 +366,15 @@ namespace Techtoniq.GHSDatabase.Properties {
         internal static string P373 {
             get {
                 return ResourceManager.GetString("P373", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Fight fire with normal precautions from a reasonable distance..
+        /// </summary>
+        internal static string P374 {
+            get {
+                return ResourceManager.GetString("P374", resourceCulture);
             }
         }
         

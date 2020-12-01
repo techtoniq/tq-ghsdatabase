@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections;
 using System.Globalization;
+using System.Linq;
 using FluentAssertions;
 using NUnit.Framework;
 
@@ -23,13 +24,11 @@ namespace Techtoniq.GHSDatabase.UnitTest.Tests
             {
                 get
                 {
-                    yield return new TestCaseData(null, null);
-                    /*
-                    foreach (var e in Enum.GetValues(typeof(GHSDatabase.HazardClass)))
+                    var pcodes = new GhsDatabase().GetAll().SelectMany(h => h.PCodes).Select(p => p.Code).Distinct().ToList();
+                    foreach (var pcode in pcodes)
                     {
-                        yield return new TestCaseData(e, "en");
-                    }
-                    */
+                        yield return new TestCaseData(pcode, "en");
+                    }                   
                 }
             }
         }
@@ -38,20 +37,36 @@ namespace Techtoniq.GHSDatabase.UnitTest.Tests
         public class PCode
         {
             [TestCaseSource(typeof(PCodeTestData), nameof(PCodeTestData.TestCases))]
-            public void When_KeyDefined_Then_ResourceExists(string key, string cultureName)
+            public void When_KeyDefined_Then_ResourceShouldExist(string key, string cultureName)
             {
                 // Arrange.
 
-                //var key = (GHSDatabase.HazardClass)ordinalValue;
-                //var cultureInfo = CultureInfo.CreateSpecificCulture(cultureName);
+                var cultureInfo = CultureInfo.CreateSpecificCulture(cultureName);
 
                 // Act.
 
-                //var value = StringResourceManager.GetHazardClassString(key, cultureInfo);
+                var value = StringResourceManager.GetPCodePhraseString(key, cultureInfo);
 
                 // Assert.
 
-                //value.Should().NotBeNullOrWhiteSpace();
+                value.Should().NotBeNullOrWhiteSpace();
+            }
+
+            [TestCase("P370+P380","en", ExpectedResult = "In case of fire: Evacuate area.")]
+            public string When_KeyIsComposite_Then_ReturnConcatenatedStrings(string key, string cultureName)
+            {
+                // Arrange.
+
+                var cultureInfo = CultureInfo.CreateSpecificCulture(cultureName);
+
+                // Act.
+
+                var value = StringResourceManager.GetPCodePhraseString(key, cultureInfo);
+
+                // Assert.
+
+                value.Should().NotBeNullOrWhiteSpace();
+                return value;
             }
         }
     }

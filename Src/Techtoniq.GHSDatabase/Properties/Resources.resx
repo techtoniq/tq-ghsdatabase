@@ -190,14 +190,40 @@
   <data name="P202" xml:space="preserve">
     <value>Do not handle until all safety precautions have been read and understood.</value>
   </data>
+  <data name="P210" xml:space="preserve">
+    <value>Keep away from heat/sparks/open flames/hot surfaces. — No smoking.</value>
+  </data>
+  <data name="P230" xml:space="preserve">
+    <value>Keep wetted with ...</value>
+  </data>
+  <data name="P234" xml:space="preserve">
+    <value>Keep only in original container.</value>
+  </data>
+  <data name="P240" xml:space="preserve">
+    <value>Ground/bond container and receiving equipment.</value>
+  </data>
+  <data name="P250" xml:space="preserve">
+    <value>Do not subject to grinding/shock/ ... /friction.</value>
+  </data>
+  <data name="P280" xml:space="preserve">
+    <value>Wear protective gloves/protective clothing/eye protection/face
+prWear protective gloves/protective clothing/eye protection/face
+Wear protective gloves/protective clothing/eye protection/face protection.</value>
+  </data>
   <data name="P281" xml:space="preserve">
     <value>Use personal protective equipment as required.</value>
+  </data>
+  <data name="P370" xml:space="preserve">
+    <value>In case of fire:</value>
   </data>
   <data name="P372" xml:space="preserve">
     <value>Explosion risk incase of fire.</value>
   </data>
   <data name="P373" xml:space="preserve">
     <value>DO NOT fight fire when fire reaches explosives.</value>
+  </data>
+  <data name="P374" xml:space="preserve">
+    <value>Fight fire with normal precautions from a reasonable distance.</value>
   </data>
   <data name="P380" xml:space="preserve">
     <value>Evacuate area.</value>

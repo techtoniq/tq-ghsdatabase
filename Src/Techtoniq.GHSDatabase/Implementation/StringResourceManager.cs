@@ -1,4 +1,6 @@
-﻿using System.Globalization;
+﻿using System;
+using System.Globalization;
+using System.Linq;
 using System.Reflection;
 using System.Resources;
 
@@ -33,9 +35,10 @@ namespace Techtoniq.GHSDatabase
 
         public static string GetPCodePhraseString(string pCode, CultureInfo cultureInfo)
         {
-            return _resourceManager.GetString(pCode, cultureInfo);
-        }
-        
+            var pcodes = pCode.Split('+');
+            var phrases = string.Join(" ", pcodes.Select(p => _resourceManager.GetString(p, cultureInfo)));
 
+            return phrases;
+        }        
     }
 }

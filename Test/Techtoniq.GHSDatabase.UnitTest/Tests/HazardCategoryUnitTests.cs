@@ -35,7 +35,7 @@ namespace Techtoniq.GHSDatabase.UnitTest.Tests
         public class HazardCategory
         {
             [TestCaseSource(typeof(HazardCategoryTestData), nameof(HazardCategoryTestData.TestCases))]
-            public void When_KeyDefined_Then_ResourceExists(int ordinalValue, string cultureName)
+            public void When_KeyDefined_Then_ResourceShouldExist(int ordinalValue, string cultureName)
             {
                 // Arrange.
 
