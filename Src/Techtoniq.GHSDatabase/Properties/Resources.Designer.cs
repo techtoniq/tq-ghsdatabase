@@ -61,6 +61,15 @@ namespace Techtoniq.GHSDatabase.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Category 1.
+        /// </summary>
+        internal static string Category_Category1 {
+            get {
+                return ResourceManager.GetString("Category_Category1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Div 1.1.
         /// </summary>
         internal static string Category_Div1_1 {
@@ -179,6 +188,16 @@ namespace Techtoniq.GHSDatabase.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] ghs02 {
+            get {
+                object obj = ResourceManager.GetObject("ghs02", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Unstable explosive..
         /// </summary>
         internal static string H200 {
@@ -229,6 +248,15 @@ namespace Techtoniq.GHSDatabase.Properties {
         internal static string H205 {
             get {
                 return ResourceManager.GetString("H205", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Extremely flammable gas.
+        /// </summary>
+        internal static string H220 {
+            get {
+                return ResourceManager.GetString("H220", resourceCulture);
             }
         }
         
@@ -379,6 +407,15 @@ namespace Techtoniq.GHSDatabase.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Leaking gas fire: Do not extinguish, unless leak can be stopped safely..
+        /// </summary>
+        internal static string P377 {
+            get {
+                return ResourceManager.GetString("P377", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Evacuate area..
         /// </summary>
         internal static string P380 {
@@ -388,11 +425,29 @@ namespace Techtoniq.GHSDatabase.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Eliminate all ignition sources if safe to do so..
+        /// </summary>
+        internal static string P381 {
+            get {
+                return ResourceManager.GetString("P381", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Store ....
         /// </summary>
         internal static string P401 {
             get {
                 return ResourceManager.GetString("P401", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Store in a well-ventilated place..
+        /// </summary>
+        internal static string P403 {
+            get {
+                return ResourceManager.GetString("P403", resourceCulture);
             }
         }
         

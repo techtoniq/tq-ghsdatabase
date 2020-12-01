@@ -8,6 +8,8 @@
         Div1_3,
         Div1_4,
         Div1_5,
-        Div1_6
+        Div1_6,
+
+        Category1
     }
 }

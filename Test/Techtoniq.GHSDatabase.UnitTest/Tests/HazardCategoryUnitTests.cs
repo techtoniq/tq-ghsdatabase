@@ -48,7 +48,7 @@ namespace Techtoniq.GHSDatabase.UnitTest.Tests
 
                 // Assert.
 
-                value.Should().NotBeNullOrWhiteSpace();
+                value.Should().NotBeNullOrWhiteSpace(because: $"enum GHSDatabase.HazardCategory.{key} is defined");
             }
         }
     }

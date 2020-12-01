@@ -117,6 +117,9 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="Category_Category1" xml:space="preserve">
+    <value>Category 1</value>
+  </data>
   <data name="Category_Div1_1" xml:space="preserve">
     <value>Div 1.1</value>
   </data>
@@ -157,6 +160,9 @@
   <data name="ghs01" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ghs01.gif;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="ghs02" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ghs02.gif;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="H200" xml:space="preserve">
     <value>Unstable explosive.</value>
   </data>
@@ -174,6 +180,9 @@
   </data>
   <data name="H205" xml:space="preserve">
     <value>May mass explode in fire</value>
+  </data>
+  <data name="H220" xml:space="preserve">
+    <value>Extremely flammable gas</value>
   </data>
   <data name="P101" xml:space="preserve">
     <value>If medical advice is needed,have product container or label at hand.</value>
@@ -225,11 +234,20 @@ Wear protective gloves/protective clothing/eye protection/face protection.</valu
   <data name="P374" xml:space="preserve">
     <value>Fight fire with normal precautions from a reasonable distance.</value>
   </data>
+  <data name="P377" xml:space="preserve">
+    <value>Leaking gas fire: Do not extinguish, unless leak can be stopped safely.</value>
+  </data>
   <data name="P380" xml:space="preserve">
     <value>Evacuate area.</value>
   </data>
+  <data name="P381" xml:space="preserve">
+    <value>Eliminate all ignition sources if safe to do so.</value>
+  </data>
   <data name="P401" xml:space="preserve">
     <value>Store ...</value>
+  </data>
+  <data name="P403" xml:space="preserve">
+    <value>Store in a well-ventilated place.</value>
   </data>
   <data name="P501" xml:space="preserve">
     <value>Dispose of contents/container to ...</value>

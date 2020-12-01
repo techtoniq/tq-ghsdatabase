@@ -15,6 +15,8 @@ namespace Techtoniq.GHSDatabase
             { "H203", new Hazard(HazardClass.Explosives, new HazardCategory[]{ HazardCategory.Div1_3}, Properties.Resources.ghs01, SignalWord.Danger, new PCode[]{new PCode("P210"), new PCode("P230"), new PCode("P240"), new PCode("P250"), new PCode("P280"), new PCode("P370+P380"), new PCode("P372"), new PCode("P373"), new PCode("P401"), new PCode("P501") }) },
             { "H204", new Hazard(HazardClass.Explosives, new HazardCategory[]{ HazardCategory.Div1_4}, Properties.Resources.ghs01, SignalWord.Warning, new PCode[]{new PCode("P210"), new PCode("P240"), new PCode("P250"), new PCode("P280"), new PCode("P370+P380"), new PCode("P372"), new PCode("P373"), new PCode("P374"), new PCode("P401"), new PCode("P501") }) },
             { "H205", new Hazard(HazardClass.Explosives, new HazardCategory[]{ HazardCategory.Div1_5}, null, SignalWord.Danger, new PCode[]{new PCode("P210"), new PCode("P230"), new PCode("P234"), new PCode("P240"), new PCode("P250"), new PCode("P280"), new PCode("P370+P380"), new PCode("P372"), new PCode("P373"), new PCode("P401"), new PCode("P501") }) },
+
+            { "H220", new Hazard(HazardClass.FlammableGases, new HazardCategory[]{ HazardCategory.Category1}, Properties.Resources.ghs02, SignalWord.Danger, new PCode[]{new PCode("P210"), new PCode("P377"), new PCode("P381"), new PCode("P403") }) },
         };
        
         public IHazard Get(string code, string cultureName = "en")

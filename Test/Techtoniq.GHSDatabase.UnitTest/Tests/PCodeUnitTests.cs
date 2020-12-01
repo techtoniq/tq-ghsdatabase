@@ -11,10 +11,6 @@ namespace Techtoniq.GHSDatabase.UnitTest.Tests
     /// Development helper.
     /// Checks that every key has a corresponding resource in the resource file.
     /// </summary>
-    /// <remarks>
-    /// Since the enum classes are scoped as internal we can't use them as parameters to the public tests so 
-    /// we pass the ordinal values out of the test cases and cast them back to an enum inside the tests
-    /// </remarks>
     [TestFixture]
     public class PCodeUnitTests
     {
@@ -49,7 +45,7 @@ namespace Techtoniq.GHSDatabase.UnitTest.Tests
 
                 // Assert.
 
-                value.Should().NotBeNullOrWhiteSpace();
+                value.Should().NotBeNullOrWhiteSpace(because: $"PCode {key} is defined.");
             }
 
             [TestCase("P370+P380","en", ExpectedResult = "In case of fire: Evacuate area.")]
