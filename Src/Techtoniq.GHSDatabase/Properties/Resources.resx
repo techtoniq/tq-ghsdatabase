@@ -141,6 +141,18 @@
   <data name="Class_Explosives" xml:space="preserve">
     <value>Explosives</value>
   </data>
+  <data name="Class_FlammableAerosoles" xml:space="preserve">
+    <value>Flammable Aerosoles</value>
+  </data>
+  <data name="Class_FlammableGases" xml:space="preserve">
+    <value>Flammable Gases</value>
+  </data>
+  <data name="Class_FlammableLiquids" xml:space="preserve">
+    <value>Flammable Liquids</value>
+  </data>
+  <data name="Class_FlammableSolids" xml:space="preserve">
+    <value>Flammable Solids</value>
+  </data>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="ghs01" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ghs01.gif;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>

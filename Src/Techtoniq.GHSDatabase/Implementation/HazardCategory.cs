@@ -5,7 +5,7 @@
         UnstableExplosive,
         Div1_1,
         Div1_2,
-        DiV1_3,
+        Div1_3,
         Div1_4,
         Div1_5,
         Div1_6

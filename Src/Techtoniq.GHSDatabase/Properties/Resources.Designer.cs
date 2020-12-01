@@ -133,6 +133,42 @@ namespace Techtoniq.GHSDatabase.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Flammable Aerosoles.
+        /// </summary>
+        internal static string Class_FlammableAerosoles {
+            get {
+                return ResourceManager.GetString("Class_FlammableAerosoles", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Flammable Gases.
+        /// </summary>
+        internal static string Class_FlammableGases {
+            get {
+                return ResourceManager.GetString("Class_FlammableGases", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Flammable Liquids.
+        /// </summary>
+        internal static string Class_FlammableLiquids {
+            get {
+                return ResourceManager.GetString("Class_FlammableLiquids", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Flammable Solids.
+        /// </summary>
+        internal static string Class_FlammableSolids {
+            get {
+                return ResourceManager.GetString("Class_FlammableSolids", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized resource of type System.Byte[].
         /// </summary>
         internal static byte[] ghs01 {

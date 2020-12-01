@@ -18,9 +18,11 @@ namespace Techtoniq.GHSDatabase.UnitTest
                 IGhsDatabase unit = new GhsDatabase();
 
                 // Act.
+
                 var hazard = unit.Get("H200");
 
                 // Assert.
+
                 hazard.Should().NotBeNull();
                 hazard.Class.Should().Be("Explosives");
                 hazard.Categories.Should().HaveCount(1);
@@ -49,9 +51,11 @@ namespace Techtoniq.GHSDatabase.UnitTest
                 IGhsDatabase unit = new GhsDatabase();
 
                 // Act.
+
                 var hazard = unit.Get("wibble");
 
                 // Assert.
+
                 hazard.Should().BeNull();
             }
 
@@ -63,9 +67,11 @@ namespace Techtoniq.GHSDatabase.UnitTest
                 IGhsDatabase unit = new GhsDatabase();
 
                 // Act.
+
                 Action act = () => { var hazard = unit.Get(null); };
 
                 // Assert.
+
                 act.Should().Throw<ArgumentException>()
                     .WithMessage($"Null or empty hazard code. (Parameter 'hCode')")
                     .And.ParamName.Should().Be("hCode");                               
@@ -79,9 +85,11 @@ namespace Techtoniq.GHSDatabase.UnitTest
                 IGhsDatabase unit = new GhsDatabase();
 
                 // Act.
+
                 Action act = () => { var hazard = unit.Get("H200", null); };
 
                 // Assert.
+
                 act.Should().Throw<ArgumentException>()
                     .WithMessage($"Null or empty culture name. (Parameter 'cultureName')")
                     .And.ParamName.Should().Be("cultureName");
@@ -99,9 +107,11 @@ namespace Techtoniq.GHSDatabase.UnitTest
                 IGhsDatabase unit = new GhsDatabase();
 
                 // Act.
+
                 var hazards = unit.GetAll();
 
                 // Assert.
+
                 hazards.Should().NotBeNull();
                 hazards.Should().HaveCount(6);
             }
