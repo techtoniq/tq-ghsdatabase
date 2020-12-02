@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Drawing;
 using System.IO;
+using System.Text;
 using System.Windows.Forms;
 using Techtoniq.GHSDatabase;
 
@@ -21,7 +22,11 @@ namespace WindowsFormsFrameworkApp
             if (null == hazard)
             {
                 uxPictureHazardPictogram.Image = null;
-                uxLabelHazardPhrase.Text = string.Empty;
+                uxTextClassValue.Text = string.Empty;
+                uxTextCategoryValue.Text = string.Empty;
+                uxTextSignalWordValue.Text = string.Empty;
+                uxTextPhraseValue.Text = string.Empty;
+                uxTextPCodesValue.Text = string.Empty;
             }
             else
             {
@@ -29,7 +34,17 @@ namespace WindowsFormsFrameworkApp
                 uxPictureHazardPictogram.Image = Image.FromStream(ms);
                 uxPictureHazardPictogram.SizeMode = PictureBoxSizeMode.StretchImage;
 
-                uxLabelHazardPhrase.Text = hazard.Phrase;
+                uxTextClassValue.Text = hazard.Class;
+                uxTextCategoryValue.Text = string.Join(", ", hazard.Categories);
+                uxTextSignalWordValue.Text = hazard.SignalWord;
+                uxTextPhraseValue.Text = hazard.Phrase;
+
+                StringBuilder pcodeStatement = new StringBuilder();
+                foreach(var pcode in hazard.PCodes)
+                {
+                    pcodeStatement.AppendLine($"{pcode.Code}\t{pcode.Phrase}");
+                }
+                uxTextPCodesValue.Text = pcodeStatement.ToString();
             }
         }
     }
