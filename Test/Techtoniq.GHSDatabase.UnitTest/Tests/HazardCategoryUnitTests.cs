@@ -4,7 +4,7 @@ using System.Globalization;
 using FluentAssertions;
 using NUnit.Framework;
 
-namespace Techtoniq.GHSDatabase.UnitTest.Tests
+namespace Techtoniq.GHSDatabase.UnitTest
 {
     /// <summary>
     /// Development helper.

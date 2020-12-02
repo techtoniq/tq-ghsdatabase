@@ -1,11 +1,10 @@
-﻿using System;
-using System.Collections;
+﻿using System.Collections;
 using System.Globalization;
 using System.Linq;
 using FluentAssertions;
 using NUnit.Framework;
 
-namespace Techtoniq.GHSDatabase.UnitTest.Tests
+namespace Techtoniq.GHSDatabase.UnitTest
 {
     /// <summary>
     /// Development helper.
