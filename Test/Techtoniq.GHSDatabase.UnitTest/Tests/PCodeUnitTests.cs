@@ -1,5 +1,4 @@
-﻿using System;
-using System.Collections;
+﻿using System.Collections;
 using System.Globalization;
 using System.Linq;
 using FluentAssertions;
@@ -62,6 +61,23 @@ namespace Techtoniq.GHSDatabase.UnitTest.Tests
                 // Assert.
 
                 value.Should().NotBeNullOrWhiteSpace();
+                return value;
+            }            
+
+            [TestCase("P410+Pwontexist", "en", ExpectedResult = null)]
+            public string When_PartofCompositeKeyNotDefined_Then_ReturnNull(string key, string cultureName)
+            {
+                // Arrange.
+
+                var cultureInfo = CultureInfo.CreateSpecificCulture(cultureName);
+
+                // Act.
+
+                var value = StringResourceManager.GetPCodePhraseString(key, cultureInfo);
+
+                // Assert.
+
+                value.Should().BeNull();
                 return value;
             }
         }

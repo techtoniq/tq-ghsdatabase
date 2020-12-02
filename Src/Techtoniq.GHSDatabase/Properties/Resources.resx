@@ -190,6 +190,9 @@
   <data name="H221" xml:space="preserve">
     <value>Flammable gas</value>
   </data>
+  <data name="H222" xml:space="preserve">
+    <value>Extremely flammable aerosole</value>
+  </data>
   <data name="P101" xml:space="preserve">
     <value>If medical advice is needed,have product container or label at hand.</value>
   </data>
@@ -208,6 +211,9 @@
   <data name="P210" xml:space="preserve">
     <value>Keep away from heat/sparks/open flames/hot surfaces. — No smoking.</value>
   </data>
+  <data name="P211" xml:space="preserve">
+    <value>Do not spray on an open flame or other ignition source.</value>
+  </data>
   <data name="P230" xml:space="preserve">
     <value>Keep wetted with ...</value>
   </data>
@@ -219,6 +225,9 @@
   </data>
   <data name="P250" xml:space="preserve">
     <value>Do not subject to grinding/shock/ ... /friction.</value>
+  </data>
+  <data name="P251" xml:space="preserve">
+    <value>Pressurized container: Do not pierce or burn, even after use.</value>
   </data>
   <data name="P280" xml:space="preserve">
     <value>Wear protective gloves/protective clothing/eye protection/face
@@ -254,6 +263,12 @@ Wear protective gloves/protective clothing/eye protection/face protection.</valu
   </data>
   <data name="P403" xml:space="preserve">
     <value>Store in a well-ventilated place.</value>
+  </data>
+  <data name="P410" xml:space="preserve">
+    <value>Protect from sunlight.</value>
+  </data>
+  <data name="P412" xml:space="preserve">
+    <value>Do not expose to temperatures exceeding 50°C / 122°F.</value>
   </data>
   <data name="P501" xml:space="preserve">
     <value>Dispose of contents/container to ...</value>

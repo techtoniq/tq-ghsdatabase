@@ -279,6 +279,15 @@ namespace Techtoniq.GHSDatabase.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Extremely flammable aerosole.
+        /// </summary>
+        internal static string H222 {
+            get {
+                return ResourceManager.GetString("H222", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to If medical advice is needed,have product container or label at hand..
         /// </summary>
         internal static string P101 {
@@ -333,6 +342,15 @@ namespace Techtoniq.GHSDatabase.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Do not spray on an open flame or other ignition source..
+        /// </summary>
+        internal static string P211 {
+            get {
+                return ResourceManager.GetString("P211", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Keep wetted with ....
         /// </summary>
         internal static string P230 {
@@ -365,6 +383,15 @@ namespace Techtoniq.GHSDatabase.Properties {
         internal static string P250 {
             get {
                 return ResourceManager.GetString("P250", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Pressurized container: Do not pierce or burn, even after use..
+        /// </summary>
+        internal static string P251 {
+            get {
+                return ResourceManager.GetString("P251", resourceCulture);
             }
         }
         
@@ -466,6 +493,24 @@ namespace Techtoniq.GHSDatabase.Properties {
         internal static string P403 {
             get {
                 return ResourceManager.GetString("P403", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Protect from sunlight..
+        /// </summary>
+        internal static string P410 {
+            get {
+                return ResourceManager.GetString("P410", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Do not expose to temperatures exceeding 50°C / 122°F..
+        /// </summary>
+        internal static string P412 {
+            get {
+                return ResourceManager.GetString("P412", resourceCulture);
             }
         }
         
