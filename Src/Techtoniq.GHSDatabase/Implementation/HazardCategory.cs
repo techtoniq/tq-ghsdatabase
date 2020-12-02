@@ -10,6 +10,7 @@
         Div1_5,
         Div1_6,
 
-        Category1
+        Category1,
+        Category2,
     }
 }

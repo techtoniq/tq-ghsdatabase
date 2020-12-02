@@ -70,6 +70,15 @@ namespace Techtoniq.GHSDatabase.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Category 2.
+        /// </summary>
+        internal static string Category_Category2 {
+            get {
+                return ResourceManager.GetString("Category_Category2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Div 1.1.
         /// </summary>
         internal static string Category_Div1_1 {
@@ -257,6 +266,15 @@ namespace Techtoniq.GHSDatabase.Properties {
         internal static string H220 {
             get {
                 return ResourceManager.GetString("H220", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Flammable gas.
+        /// </summary>
+        internal static string H221 {
+            get {
+                return ResourceManager.GetString("H221", resourceCulture);
             }
         }
         
