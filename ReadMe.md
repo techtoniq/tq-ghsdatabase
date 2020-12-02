@@ -13,16 +13,7 @@ This Nuget package provides an in-memory database of hazard codes, phrases, pict
     IGhsDatabase ghsdb = new GhsDatabase();
     IHazard hazard = ghsdb.Get("H200");
 
-    if (null == hazard)
-    {
-        uxPictureHazardPictogram.Image = null;
-        uxTextClassValue.Text = string.Empty;
-        uxTextCategoryValue.Text = string.Empty;
-        uxTextSignalWordValue.Text = string.Empty;
-        uxTextPhraseValue.Text = string.Empty;
-        uxTextPCodesValue.Text = string.Empty;
-    }
-    else
+    if (null != hazard)
     {
         MemoryStream ms = new MemoryStream(hazard.PictogramImage);
         uxPictureHazardPictogram.Image = Image.FromStream(ms);
@@ -39,6 +30,15 @@ This Nuget package provides an in-memory database of hazard codes, phrases, pict
             pcodeStatement.AppendLine($"{pcode.Code}\t{pcode.Phrase}");
         }
         uxTextPCodesValue.Text = pcodeStatement.ToString();
+    }
+    else 
+    {
+        uxPictureHazardPictogram.Image = null;
+        uxTextClassValue.Text = string.Empty;
+        uxTextCategoryValue.Text = string.Empty;
+        uxTextSignalWordValue.Text = string.Empty;
+        uxTextPhraseValue.Text = string.Empty;
+        uxTextPCodesValue.Text = string.Empty;
     }
 ```
 ![Example search result](./Resources/ImageSrc/Example/Example.png)
