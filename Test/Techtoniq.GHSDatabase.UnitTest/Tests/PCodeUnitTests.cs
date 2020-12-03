@@ -44,7 +44,7 @@ namespace Techtoniq.GHSDatabase.UnitTest
 
                 // Assert.
 
-                value.Should().NotBeNullOrWhiteSpace(because: $"PCode {key} is defined.");
+                value.Should().NotBeNullOrWhiteSpace(because: $"PCode {key} is defined");
             }
 
             [TestCase("P370+P380","en", ExpectedResult = "In case of fire: Evacuate area.")]

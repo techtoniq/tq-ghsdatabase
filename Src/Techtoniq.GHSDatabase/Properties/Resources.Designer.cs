@@ -70,11 +70,47 @@ namespace Techtoniq.GHSDatabase.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Category 1A.
+        /// </summary>
+        internal static string Category_Category1A {
+            get {
+                return ResourceManager.GetString("Category_Category1A", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Category 1B.
+        /// </summary>
+        internal static string Category_Category1B {
+            get {
+                return ResourceManager.GetString("Category_Category1B", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Category 2.
         /// </summary>
         internal static string Category_Category2 {
             get {
                 return ResourceManager.GetString("Category_Category2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Category3.
+        /// </summary>
+        internal static string Category_Category3 {
+            get {
+                return ResourceManager.GetString("Category_Category3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Category 4.
+        /// </summary>
+        internal static string Category_Category4 {
+            get {
+                return ResourceManager.GetString("Category_Category4", resourceCulture);
             }
         }
         
@@ -129,6 +165,69 @@ namespace Techtoniq.GHSDatabase.Properties {
         internal static string Category_Div1_6 {
             get {
                 return ResourceManager.GetString("Category_Div1_6", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Type A.
+        /// </summary>
+        internal static string Category_TypeA {
+            get {
+                return ResourceManager.GetString("Category_TypeA", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Type B.
+        /// </summary>
+        internal static string Category_TypeB {
+            get {
+                return ResourceManager.GetString("Category_TypeB", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Type C.
+        /// </summary>
+        internal static string Category_TypeC {
+            get {
+                return ResourceManager.GetString("Category_TypeC", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Type D.
+        /// </summary>
+        internal static string Category_TypeD {
+            get {
+                return ResourceManager.GetString("Category_TypeD", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Type E.
+        /// </summary>
+        internal static string Category_TypeE {
+            get {
+                return ResourceManager.GetString("Category_TypeE", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Type F.
+        /// </summary>
+        internal static string Category_TypeF {
+            get {
+                return ResourceManager.GetString("Category_TypeF", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Type G.
+        /// </summary>
+        internal static string Category_TypeG {
+            get {
+                return ResourceManager.GetString("Category_TypeG", resourceCulture);
             }
         }
         
@@ -288,6 +387,51 @@ namespace Techtoniq.GHSDatabase.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Flammable aerosole.
+        /// </summary>
+        internal static string H223 {
+            get {
+                return ResourceManager.GetString("H223", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Extremely flammable liquid and vapour.
+        /// </summary>
+        internal static string H224 {
+            get {
+                return ResourceManager.GetString("H224", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Highly flammable liquid and vapour.
+        /// </summary>
+        internal static string H225 {
+            get {
+                return ResourceManager.GetString("H225", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Flammable liquid and vapour.
+        /// </summary>
+        internal static string H226 {
+            get {
+                return ResourceManager.GetString("H226", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Flammable solid.
+        /// </summary>
+        internal static string H228 {
+            get {
+                return ResourceManager.GetString("H228", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to If medical advice is needed,have product container or label at hand..
         /// </summary>
         internal static string P101 {
@@ -360,6 +504,15 @@ namespace Techtoniq.GHSDatabase.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Keep container tightly closed..
+        /// </summary>
+        internal static string P233 {
+            get {
+                return ResourceManager.GetString("P233", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Keep only in original container..
         /// </summary>
         internal static string P234 {
@@ -369,11 +522,47 @@ namespace Techtoniq.GHSDatabase.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Keep cool..
+        /// </summary>
+        internal static string P235 {
+            get {
+                return ResourceManager.GetString("P235", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Ground/bond container and receiving equipment..
         /// </summary>
         internal static string P240 {
             get {
                 return ResourceManager.GetString("P240", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Use explosion-proof electrical/ventilating/lighting/ … /equipment..
+        /// </summary>
+        internal static string P241 {
+            get {
+                return ResourceManager.GetString("P241", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Use only non-sparking tools..
+        /// </summary>
+        internal static string P242 {
+            get {
+                return ResourceManager.GetString("P242", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Take precautionary measures against static discharge,.
+        /// </summary>
+        internal static string P243 {
+            get {
+                return ResourceManager.GetString("P243", resourceCulture);
             }
         }
         
@@ -412,6 +601,33 @@ namespace Techtoniq.GHSDatabase.Properties {
         internal static string P281 {
             get {
                 return ResourceManager.GetString("P281", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to IF ON SKIN (or hair).
+        /// </summary>
+        internal static string P303 {
+            get {
+                return ResourceManager.GetString("P303", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Rinse skin with water/shower..
+        /// </summary>
+        internal static string P353 {
+            get {
+                return ResourceManager.GetString("P353", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Remove/Take off immediately all contaminated clothing..
+        /// </summary>
+        internal static string P361 {
+            get {
+                return ResourceManager.GetString("P361", resourceCulture);
             }
         }
         
@@ -457,6 +673,15 @@ namespace Techtoniq.GHSDatabase.Properties {
         internal static string P377 {
             get {
                 return ResourceManager.GetString("P377", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Use ... for extinction..
+        /// </summary>
+        internal static string P378 {
+            get {
+                return ResourceManager.GetString("P378", resourceCulture);
             }
         }
         

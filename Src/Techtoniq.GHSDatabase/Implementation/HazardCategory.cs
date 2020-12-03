@@ -11,6 +11,18 @@
         Div1_6,
 
         Category1,
+        Category1A,
+        Category1B,
         Category2,
+        Category3,
+        Category4,
+
+        TypeA,
+        TypeB,
+        TypeC,
+        TypeD,
+        TypeE,
+        TypeF,
+        TypeG
     }
 }

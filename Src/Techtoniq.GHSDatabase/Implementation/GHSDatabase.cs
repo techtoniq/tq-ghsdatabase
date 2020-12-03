@@ -22,6 +22,13 @@ namespace Techtoniq.GHSDatabase
             { "H221", new Hazard(HazardClass.FlammableGases, new HazardCategory[]{ HazardCategory.Category2}, null, SignalWord.Warning, new PCode[]{new PCode("P210"), new PCode("P377"), new PCode("P381"), new PCode("P403") }) },
 
             { "H222", new Hazard(HazardClass.FlammableAerosoles, new HazardCategory[]{ HazardCategory.Category1}, Properties.Resources.ghs02, SignalWord.Danger, new PCode[]{new PCode("P210"), new PCode("P211"), new PCode("P251"), new PCode("P410+P412") }) },
+            { "H223", new Hazard(HazardClass.FlammableAerosoles, new HazardCategory[]{ HazardCategory.Category2}, Properties.Resources.ghs02, SignalWord.Warning, new PCode[]{new PCode("P210"), new PCode("P211"), new PCode("P251"), new PCode("P410+P412") }) },
+
+            { "H224", new Hazard(HazardClass.FlammableLiquids, new HazardCategory[]{ HazardCategory.Category1}, Properties.Resources.ghs02, SignalWord.Danger, new PCode[]{new PCode("P210"), new PCode("P233"), new PCode("P240"), new PCode("P241"), new PCode("P242"), new PCode("P243"), new PCode("P280"), new PCode("P303+P361+P353"), new PCode("P370+P378"), new PCode("P403+P235"), new PCode("P501") }) },
+            { "H225", new Hazard(HazardClass.FlammableLiquids, new HazardCategory[]{ HazardCategory.Category2}, Properties.Resources.ghs02, SignalWord.Danger, new PCode[]{new PCode("P210"), new PCode("P233"), new PCode("P240"), new PCode("P241"), new PCode("P242"), new PCode("P243"), new PCode("P280"), new PCode("P303+P361+P353"), new PCode("P370+P378"), new PCode("P403+P235"), new PCode("P501") }) },
+            { "H226", new Hazard(HazardClass.FlammableLiquids, new HazardCategory[]{ HazardCategory.Category3}, Properties.Resources.ghs02, SignalWord.Warning, new PCode[]{new PCode("P210"), new PCode("P233"), new PCode("P240"), new PCode("P241"), new PCode("P242"), new PCode("P243"), new PCode("P280"), new PCode("P303+P361+P353"), new PCode("P370+P378"), new PCode("P403+P235"), new PCode("P501") }) },
+
+            { "H228", new Hazard(HazardClass.FlammableSolids, new HazardCategory[]{ HazardCategory.Category1}, Properties.Resources.ghs02, SignalWord.Danger, new PCode[]{new PCode("P210"), new PCode("P240"), new PCode("P241"), new PCode("P280"), new PCode("P370+P378") }) },
         };
 
         #endregion Data

@@ -120,8 +120,20 @@
   <data name="Category_Category1" xml:space="preserve">
     <value>Category 1</value>
   </data>
+  <data name="Category_Category1A" xml:space="preserve">
+    <value>Category 1A</value>
+  </data>
+  <data name="Category_Category1B" xml:space="preserve">
+    <value>Category 1B</value>
+  </data>
   <data name="Category_Category2" xml:space="preserve">
     <value>Category 2</value>
+  </data>
+  <data name="Category_Category3" xml:space="preserve">
+    <value>Category3</value>
+  </data>
+  <data name="Category_Category4" xml:space="preserve">
+    <value>Category 4</value>
   </data>
   <data name="Category_Div1_1" xml:space="preserve">
     <value>Div 1.1</value>
@@ -140,6 +152,27 @@
   </data>
   <data name="Category_Div1_6" xml:space="preserve">
     <value>Div 1.6</value>
+  </data>
+  <data name="Category_TypeA" xml:space="preserve">
+    <value>Type A</value>
+  </data>
+  <data name="Category_TypeB" xml:space="preserve">
+    <value>Type B</value>
+  </data>
+  <data name="Category_TypeC" xml:space="preserve">
+    <value>Type C</value>
+  </data>
+  <data name="Category_TypeD" xml:space="preserve">
+    <value>Type D</value>
+  </data>
+  <data name="Category_TypeE" xml:space="preserve">
+    <value>Type E</value>
+  </data>
+  <data name="Category_TypeF" xml:space="preserve">
+    <value>Type F</value>
+  </data>
+  <data name="Category_TypeG" xml:space="preserve">
+    <value>Type G</value>
   </data>
   <data name="Category_UnstableExplosive" xml:space="preserve">
     <value>Unstable Explosive</value>
@@ -193,6 +226,21 @@
   <data name="H222" xml:space="preserve">
     <value>Extremely flammable aerosole</value>
   </data>
+  <data name="H223" xml:space="preserve">
+    <value>Flammable aerosole</value>
+  </data>
+  <data name="H224" xml:space="preserve">
+    <value>Extremely flammable liquid and vapour</value>
+  </data>
+  <data name="H225" xml:space="preserve">
+    <value>Highly flammable liquid and vapour</value>
+  </data>
+  <data name="H226" xml:space="preserve">
+    <value>Flammable liquid and vapour</value>
+  </data>
+  <data name="H228" xml:space="preserve">
+    <value>Flammable solid</value>
+  </data>
   <data name="P101" xml:space="preserve">
     <value>If medical advice is needed,have product container or label at hand.</value>
   </data>
@@ -217,11 +265,26 @@
   <data name="P230" xml:space="preserve">
     <value>Keep wetted with ...</value>
   </data>
+  <data name="P233" xml:space="preserve">
+    <value>Keep container tightly closed.</value>
+  </data>
   <data name="P234" xml:space="preserve">
     <value>Keep only in original container.</value>
   </data>
+  <data name="P235" xml:space="preserve">
+    <value>Keep cool.</value>
+  </data>
   <data name="P240" xml:space="preserve">
     <value>Ground/bond container and receiving equipment.</value>
+  </data>
+  <data name="P241" xml:space="preserve">
+    <value>Use explosion-proof electrical/ventilating/lighting/ … /equipment.</value>
+  </data>
+  <data name="P242" xml:space="preserve">
+    <value>Use only non-sparking tools.</value>
+  </data>
+  <data name="P243" xml:space="preserve">
+    <value>Take precautionary measures against static discharge,</value>
   </data>
   <data name="P250" xml:space="preserve">
     <value>Do not subject to grinding/shock/ ... /friction.</value>
@@ -237,6 +300,15 @@ Wear protective gloves/protective clothing/eye protection/face protection.</valu
   <data name="P281" xml:space="preserve">
     <value>Use personal protective equipment as required.</value>
   </data>
+  <data name="P303" xml:space="preserve">
+    <value>IF ON SKIN (or hair)</value>
+  </data>
+  <data name="P353" xml:space="preserve">
+    <value>Rinse skin with water/shower.</value>
+  </data>
+  <data name="P361" xml:space="preserve">
+    <value>Remove/Take off immediately all contaminated clothing.</value>
+  </data>
   <data name="P370" xml:space="preserve">
     <value>In case of fire:</value>
   </data>
@@ -251,6 +323,9 @@ Wear protective gloves/protective clothing/eye protection/face protection.</valu
   </data>
   <data name="P377" xml:space="preserve">
     <value>Leaking gas fire: Do not extinguish, unless leak can be stopped safely.</value>
+  </data>
+  <data name="P378" xml:space="preserve">
+    <value>Use ... for extinction.</value>
   </data>
   <data name="P380" xml:space="preserve">
     <value>Evacuate area.</value>
