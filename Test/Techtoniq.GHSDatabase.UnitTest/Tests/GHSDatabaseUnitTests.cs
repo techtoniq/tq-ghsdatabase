@@ -123,6 +123,42 @@ namespace Techtoniq.GHSDatabase.UnitTest
                     .WithMessage($"Null or empty culture name. (Parameter 'cultureName')")
                     .And.ParamName.Should().Be("cultureName");
             }
+
+            [Test]
+            public void When_HazardHasNoPictograms_Then_PictogramListShouldBeEmpty()
+            {
+                // Arrange.
+
+                IGhsDatabase unit = new GhsDatabase();
+
+                // Act.
+
+                var hazards = unit.Get("H205");
+
+                // Assert.
+
+                hazards.Should().NotBeNull();
+                hazards.Should().HaveCount(1);
+                hazards[0].PictogramImages.Should().BeEmpty();
+            }
+
+            [Test]
+            public void When_HazardHasMultiplePictograms_Then_PictogramListShouldBePopulated()
+            {
+                // Arrange.
+
+                IGhsDatabase unit = new GhsDatabase();
+
+                // Act.
+
+                var hazards = unit.Get("H241");
+
+                // Assert.
+
+                hazards.Should().NotBeNull();
+                hazards.Should().HaveCount(1);
+                hazards[0].PictogramImages.Should().HaveCount(2);
+            }
         }
 
         [TestFixture(Description = "GetAll() method tests")]
@@ -142,7 +178,7 @@ namespace Techtoniq.GHSDatabase.UnitTest
                 // Assert.
 
                 hazards.Should().NotBeNull();
-                hazards.Should().HaveCount(16);
+                hazards.Should().HaveCount(17);
             }
         }
     }

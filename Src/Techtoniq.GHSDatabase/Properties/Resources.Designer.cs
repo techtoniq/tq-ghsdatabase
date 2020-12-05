@@ -540,6 +540,15 @@ namespace Techtoniq.GHSDatabase.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Heating may cause fire or explosion.
+        /// </summary>
+        internal static string H241 {
+            get {
+                return ResourceManager.GetString("H241", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to If medical advice is needed,have product container or label at hand..
         /// </summary>
         internal static string P101 {

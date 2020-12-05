@@ -277,6 +277,9 @@
   <data name="H240" xml:space="preserve">
     <value>Heating may cause an explosion</value>
   </data>
+  <data name="H241" xml:space="preserve">
+    <value>Heating may cause fire or explosion</value>
+  </data>
   <data name="P101" xml:space="preserve">
     <value>If medical advice is needed,have product container or label at hand.</value>
   </data>
