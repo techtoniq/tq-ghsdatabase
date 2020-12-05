@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Drawing;
 using System.IO;
+using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 using Techtoniq.GHSDatabase;
@@ -20,16 +21,7 @@ namespace WindowsFormsFrameworkApp
             IGhsDatabase db = new GhsDatabase();
             IList<IHazard> hazards = db.Get(uxTextCodeValue.Text, uxTextCultureValue.Text);
 
-            if (null == hazards)
-            {
-                uxPictureHazardPictogram.Image = null;
-                uxTextClassValue.Text = string.Empty;
-                uxTextCategoryValue.Text = string.Empty;
-                uxTextSignalWordValue.Text = string.Empty;
-                uxTextPhraseValue.Text = string.Empty;
-                uxTextPCodesValue.Text = string.Empty;
-            }
-            else
+            if (hazards.Any())
             {
                 // Show the first match as an example.
 
@@ -43,11 +35,20 @@ namespace WindowsFormsFrameworkApp
                 uxTextPhraseValue.Text = hazards[0].Phrase;
 
                 StringBuilder pcodeStatement = new StringBuilder();
-                foreach(var pcode in hazards[0].PCodes)
+                foreach (var pcode in hazards[0].PCodes)
                 {
                     pcodeStatement.AppendLine($"{pcode.Code}\t{pcode.Phrase}");
                 }
                 uxTextPCodesValue.Text = pcodeStatement.ToString();
+            }
+            else
+            {
+                uxPictureHazardPictogram.Image = null;
+                uxTextClassValue.Text = string.Empty;
+                uxTextCategoryValue.Text = string.Empty;
+                uxTextSignalWordValue.Text = string.Empty;
+                uxTextPhraseValue.Text = string.Empty;
+                uxTextPCodesValue.Text = string.Empty;
             }
         }
     }
