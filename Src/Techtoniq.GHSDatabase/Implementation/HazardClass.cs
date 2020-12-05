@@ -6,6 +6,18 @@
         FlammableGases,
         FlammableAerosoles,
         FlammableLiquids,
-        FlammableSolids
+        FlammableSolids,
+        SelfReactiveSubstances,
+        PyrophoricLiquidsPyrophoricSolids,
+        SelfHeatingSubstances,
+        SubstanceEmitFlammableGas,
+        OxidisingGases,
+        OxidisingLiquidsSolids,
+        GasesUnderPressure,
+        Corrosive,
+        AcuteToxicityOral,
+        AspirationHazard,
+        AcuteToxicityDermal,
+
     }
 }

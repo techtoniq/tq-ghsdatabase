@@ -30,6 +30,8 @@ namespace Techtoniq.GHSDatabase
 
             { new KeyValuePair<string, IHazard>("H228", new Hazard(HazardClass.FlammableSolids, new HazardCategory[]{ HazardCategory.Category1}, Properties.Resources.ghs02, SignalWord.Danger, new PCode[]{new PCode("P210"), new PCode("P240"), new PCode("P241"), new PCode("P280"), new PCode("P370+P378") }) )},
             { new KeyValuePair<string, IHazard>("H228", new Hazard(HazardClass.FlammableSolids, new HazardCategory[]{ HazardCategory.Category2}, Properties.Resources.ghs02, SignalWord.Warning, new PCode[]{new PCode("P210"), new PCode("P240"), new PCode("P241"), new PCode("P280"), new PCode("P370+P378") }) )},
+
+            { new KeyValuePair<string, IHazard>("H240", new Hazard(HazardClass.SelfReactiveSubstances, new HazardCategory[]{ HazardCategory.TypeA}, Properties.Resources.ghs01, SignalWord.Danger, new PCode[]{new PCode("P210"), new PCode("P220"), new PCode("P234"), new PCode("P280"), new PCode("P370+P378"), new PCode("P370+P380+P375"), new PCode("P403+P235"), new PCode("P411"), new PCode("P420"), new PCode("P501") }) )},
         };
 
         #endregion Data

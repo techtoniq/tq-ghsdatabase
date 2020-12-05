@@ -48,7 +48,7 @@ namespace Techtoniq.GHSDatabase.UnitTest
 
                 // Assert.
 
-                value.Should().NotBeNullOrWhiteSpace();
+                value.Should().NotBeNullOrWhiteSpace(because: $"hazard class {key} is defined");
             }
         }
     }

@@ -177,6 +177,18 @@
   <data name="Category_UnstableExplosive" xml:space="preserve">
     <value>Unstable Explosive</value>
   </data>
+  <data name="Class_AcuteToxicityDermal" xml:space="preserve">
+    <value>Acute toxicity, dermal</value>
+  </data>
+  <data name="Class_AcuteToxicityOral" xml:space="preserve">
+    <value>Acute toxicity, oral</value>
+  </data>
+  <data name="Class_AspirationHazard" xml:space="preserve">
+    <value>Aspiration hazard</value>
+  </data>
+  <data name="Class_Corrosive" xml:space="preserve">
+    <value>Corrosive to metals</value>
+  </data>
   <data name="Class_Explosives" xml:space="preserve">
     <value>Explosives</value>
   </data>
@@ -191,6 +203,27 @@
   </data>
   <data name="Class_FlammableSolids" xml:space="preserve">
     <value>Flammable Solids</value>
+  </data>
+  <data name="Class_GasesUnderPressure" xml:space="preserve">
+    <value>Gases under pressure</value>
+  </data>
+  <data name="Class_OxidisingGases" xml:space="preserve">
+    <value>Oxidising gases</value>
+  </data>
+  <data name="Class_OxidisingLiquidsSolids" xml:space="preserve">
+    <value>Oxidising liquids; Oxidising solids</value>
+  </data>
+  <data name="Class_PyrophoricLiquidsPyrophoricSolids" xml:space="preserve">
+    <value>Pyrophoric liquids; Pyrophoric solids</value>
+  </data>
+  <data name="Class_SelfHeatingSubstances" xml:space="preserve">
+    <value>Self-heating substances and mixtures</value>
+  </data>
+  <data name="Class_SelfReactiveSubstances" xml:space="preserve">
+    <value>Self-reactive substances and mixtures; and Organic peroxides</value>
+  </data>
+  <data name="Class_SubstanceEmitFlammableGas" xml:space="preserve">
+    <value>Substances and mixtures which, when in contact with water, emit flammable gases</value>
   </data>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="ghs01" type="System.Resources.ResXFileRef, System.Windows.Forms">
@@ -241,6 +274,9 @@
   <data name="H228" xml:space="preserve">
     <value>Flammable solid</value>
   </data>
+  <data name="H240" xml:space="preserve">
+    <value>Heating may cause an explosion</value>
+  </data>
   <data name="P101" xml:space="preserve">
     <value>If medical advice is needed,have product container or label at hand.</value>
   </data>
@@ -261,6 +297,9 @@
   </data>
   <data name="P211" xml:space="preserve">
     <value>Do not spray on an open flame or other ignition source.</value>
+  </data>
+  <data name="P220" xml:space="preserve">
+    <value>Keep/Store away from clothing/… /combustible materials.</value>
   </data>
   <data name="P230" xml:space="preserve">
     <value>Keep wetted with ...</value>
@@ -321,6 +360,9 @@ Wear protective gloves/protective clothing/eye protection/face protection.</valu
   <data name="P374" xml:space="preserve">
     <value>Fight fire with normal precautions from a reasonable distance.</value>
   </data>
+  <data name="P375" xml:space="preserve">
+    <value>Fight fire remotely due to the risk of explosion.</value>
+  </data>
   <data name="P377" xml:space="preserve">
     <value>Leaking gas fire: Do not extinguish, unless leak can be stopped safely.</value>
   </data>
@@ -342,8 +384,14 @@ Wear protective gloves/protective clothing/eye protection/face protection.</valu
   <data name="P410" xml:space="preserve">
     <value>Protect from sunlight.</value>
   </data>
+  <data name="P411" xml:space="preserve">
+    <value>Store at temperatures not</value>
+  </data>
   <data name="P412" xml:space="preserve">
     <value>Do not expose to temperatures exceeding 50°C / 122°F.</value>
+  </data>
+  <data name="P420" xml:space="preserve">
+    <value>Store away from other materials.</value>
   </data>
   <data name="P501" xml:space="preserve">
     <value>Dispose of contents/container to ...</value>

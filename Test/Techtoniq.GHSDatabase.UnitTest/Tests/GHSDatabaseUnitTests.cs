@@ -142,7 +142,7 @@ namespace Techtoniq.GHSDatabase.UnitTest
                 // Assert.
 
                 hazards.Should().NotBeNull();
-                hazards.Should().HaveCount(15);
+                hazards.Should().HaveCount(16);
             }
         }
     }

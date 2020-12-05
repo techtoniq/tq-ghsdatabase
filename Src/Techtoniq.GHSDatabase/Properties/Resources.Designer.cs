@@ -241,6 +241,42 @@ namespace Techtoniq.GHSDatabase.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Acute toxicity, dermal.
+        /// </summary>
+        internal static string Class_AcuteToxicityDermal {
+            get {
+                return ResourceManager.GetString("Class_AcuteToxicityDermal", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Acute toxicity, oral.
+        /// </summary>
+        internal static string Class_AcuteToxicityOral {
+            get {
+                return ResourceManager.GetString("Class_AcuteToxicityOral", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Aspiration hazard.
+        /// </summary>
+        internal static string Class_AspirationHazard {
+            get {
+                return ResourceManager.GetString("Class_AspirationHazard", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Corrosive to metals.
+        /// </summary>
+        internal static string Class_Corrosive {
+            get {
+                return ResourceManager.GetString("Class_Corrosive", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Explosives.
         /// </summary>
         internal static string Class_Explosives {
@@ -282,6 +318,69 @@ namespace Techtoniq.GHSDatabase.Properties {
         internal static string Class_FlammableSolids {
             get {
                 return ResourceManager.GetString("Class_FlammableSolids", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Gases under pressure.
+        /// </summary>
+        internal static string Class_GasesUnderPressure {
+            get {
+                return ResourceManager.GetString("Class_GasesUnderPressure", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Oxidising gases.
+        /// </summary>
+        internal static string Class_OxidisingGases {
+            get {
+                return ResourceManager.GetString("Class_OxidisingGases", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Oxidising liquids; Oxidising solids.
+        /// </summary>
+        internal static string Class_OxidisingLiquidsSolids {
+            get {
+                return ResourceManager.GetString("Class_OxidisingLiquidsSolids", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Pyrophoric liquids; Pyrophoric solids.
+        /// </summary>
+        internal static string Class_PyrophoricLiquidsPyrophoricSolids {
+            get {
+                return ResourceManager.GetString("Class_PyrophoricLiquidsPyrophoricSolids", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Self-heating substances and mixtures.
+        /// </summary>
+        internal static string Class_SelfHeatingSubstances {
+            get {
+                return ResourceManager.GetString("Class_SelfHeatingSubstances", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Self-reactive substances and mixtures; and Organic peroxides.
+        /// </summary>
+        internal static string Class_SelfReactiveSubstances {
+            get {
+                return ResourceManager.GetString("Class_SelfReactiveSubstances", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Substances and mixtures which, when in contact with water, emit flammable gases.
+        /// </summary>
+        internal static string Class_SubstanceEmitFlammableGas {
+            get {
+                return ResourceManager.GetString("Class_SubstanceEmitFlammableGas", resourceCulture);
             }
         }
         
@@ -432,6 +531,15 @@ namespace Techtoniq.GHSDatabase.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Heating may cause an explosion.
+        /// </summary>
+        internal static string H240 {
+            get {
+                return ResourceManager.GetString("H240", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to If medical advice is needed,have product container or label at hand..
         /// </summary>
         internal static string P101 {
@@ -491,6 +599,15 @@ namespace Techtoniq.GHSDatabase.Properties {
         internal static string P211 {
             get {
                 return ResourceManager.GetString("P211", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Keep/Store away from clothing/… /combustible materials..
+        /// </summary>
+        internal static string P220 {
+            get {
+                return ResourceManager.GetString("P220", resourceCulture);
             }
         }
         
@@ -668,6 +785,15 @@ namespace Techtoniq.GHSDatabase.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Fight fire remotely due to the risk of explosion..
+        /// </summary>
+        internal static string P375 {
+            get {
+                return ResourceManager.GetString("P375", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Leaking gas fire: Do not extinguish, unless leak can be stopped safely..
         /// </summary>
         internal static string P377 {
@@ -731,11 +857,29 @@ namespace Techtoniq.GHSDatabase.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Store at temperatures not.
+        /// </summary>
+        internal static string P411 {
+            get {
+                return ResourceManager.GetString("P411", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Do not expose to temperatures exceeding 50°C / 122°F..
         /// </summary>
         internal static string P412 {
             get {
                 return ResourceManager.GetString("P412", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Store away from other materials..
+        /// </summary>
+        internal static string P420 {
+            get {
+                return ResourceManager.GetString("P420", resourceCulture);
             }
         }
         
