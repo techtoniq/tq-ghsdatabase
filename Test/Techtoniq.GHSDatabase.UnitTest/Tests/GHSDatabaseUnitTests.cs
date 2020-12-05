@@ -11,7 +11,7 @@ namespace Techtoniq.GHSDatabase.UnitTest
         public class Get
         {
             [Test]
-            public void When_HazardFound_Then_ReturnHazard()
+            public void When_SingleHazardFound_Then_ReturnHazard()
             {
                 // Arrange.
 
@@ -19,40 +19,60 @@ namespace Techtoniq.GHSDatabase.UnitTest
 
                 // Act.
 
-                var hazard = unit.Get("H200");
+                var hazards = unit.Get("H200");
 
                 // Assert.
 
-                hazard.Should().NotBeNull();
-                hazard.Class.Should().Be("Explosives");
-                hazard.Categories.Should().HaveCount(1);
-                hazard.Categories[0].Should().Be("Unstable Explosive");
-                hazard.PictogramImage.Should().NotBeNull();
-                hazard.PictogramImage.Length.Should().Be(13128);
-                hazard.SignalWord.Should().Be("Danger");
-                hazard.Code.Should().Be("H200");
-                hazard.Phrase.Should().Be("Unstable explosive.");
-                hazard.PCodes.Should().HaveCount(8);
-                hazard.PCodes[0].Code.Should().Be("P201");
-                hazard.PCodes[0].Phrase.Should().Be("Obtain special instructions before use.");
-                hazard.PCodes[1].Code.Should().Be("P202");
-                hazard.PCodes[1].Phrase.Should().Be("Do not handle until all safety precautions have been read and understood.");
-                hazard.PCodes[2].Code.Should().Be("P281");
-                hazard.PCodes[2].Phrase.Should().Be("Use personal protective equipment as required.");
-                hazard.PCodes[3].Code.Should().Be("P372");
-                hazard.PCodes[3].Phrase.Should().Be("Explosion risk incase of fire.");
-                hazard.PCodes[4].Code.Should().Be("P373");
-                hazard.PCodes[4].Phrase.Should().Be("DO NOT fight fire when fire reaches explosives.");
-                hazard.PCodes[5].Code.Should().Be("P380");
-                hazard.PCodes[5].Phrase.Should().Be("Evacuate area.");
-                hazard.PCodes[6].Code.Should().Be("P401");
-                hazard.PCodes[6].Phrase.Should().Be("Store ...");
-                hazard.PCodes[7].Code.Should().Be("P501");
-                hazard.PCodes[7].Phrase.Should().Be("Dispose of contents/container to ...");
+                hazards.Should().NotBeNull();
+                hazards.Should().HaveCount(1);
+                hazards[0].Class.Should().Be("Explosives");
+                hazards[0].Categories.Should().HaveCount(1);
+                hazards[0].Categories[0].Should().Be("Unstable Explosive");
+                hazards[0].PictogramImage.Should().NotBeNull();
+                hazards[0].PictogramImage.Length.Should().Be(13128);
+                hazards[0].SignalWord.Should().Be("Danger");
+                hazards[0].Code.Should().Be("H200");
+                hazards[0].Phrase.Should().Be("Unstable explosive.");
+                hazards[0].PCodes.Should().HaveCount(8);
+                hazards[0].PCodes[0].Code.Should().Be("P201");
+                hazards[0].PCodes[0].Phrase.Should().Be("Obtain special instructions before use.");
+                hazards[0].PCodes[1].Code.Should().Be("P202");
+                hazards[0].PCodes[1].Phrase.Should().Be("Do not handle until all safety precautions have been read and understood.");
+                hazards[0].PCodes[2].Code.Should().Be("P281");
+                hazards[0].PCodes[2].Phrase.Should().Be("Use personal protective equipment as required.");
+                hazards[0].PCodes[3].Code.Should().Be("P372");
+                hazards[0].PCodes[3].Phrase.Should().Be("Explosion risk incase of fire.");
+                hazards[0].PCodes[4].Code.Should().Be("P373");
+                hazards[0].PCodes[4].Phrase.Should().Be("DO NOT fight fire when fire reaches explosives.");
+                hazards[0].PCodes[5].Code.Should().Be("P380");
+                hazards[0].PCodes[5].Phrase.Should().Be("Evacuate area.");
+                hazards[0].PCodes[6].Code.Should().Be("P401");
+                hazards[0].PCodes[6].Phrase.Should().Be("Store ...");
+                hazards[0].PCodes[7].Code.Should().Be("P501");
+                hazards[0].PCodes[7].Phrase.Should().Be("Dispose of contents/container to ...");
             }
 
             [Test]
-            public void When_HazardNotFound_Then_ReturnNull()
+            public void When_MultipleHazardsFound_Then_ReturnMultiple()
+            {
+                // Arrange.
+
+                IGhsDatabase unit = new GhsDatabase();
+
+                // Act.
+
+                var hazards = unit.Get("H228");
+
+                // Assert.
+
+                hazards.Should().NotBeNull();
+                hazards.Should().HaveCount(2);
+                hazards[0].SignalWord.Should().Be(SignalWord.Danger.ToString());
+                hazards[1].SignalWord.Should().Be(SignalWord.Warning.ToString());
+            }
+
+            [Test]
+            public void When_NoHazardsFound_Then_ReturnNull()
             {
                 // Arrange.
 
@@ -121,7 +141,7 @@ namespace Techtoniq.GHSDatabase.UnitTest
                 // Assert.
 
                 hazards.Should().NotBeNull();
-                hazards.Should().HaveCount(14);
+                hazards.Should().HaveCount(15);
             }
         }
     }
