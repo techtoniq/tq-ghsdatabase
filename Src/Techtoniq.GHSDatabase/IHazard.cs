@@ -6,7 +6,7 @@ namespace Techtoniq.GHSDatabase
     {
         string Class { get; }
         IList<string> Categories { get; }
-        byte[] PictogramImage { get; }
+        IList<byte[]> PictogramImages { get; }
         string SignalWord { get; }
         string Code { get; }
         string Phrase { get; }

@@ -6,7 +6,7 @@ namespace Techtoniq.GHSDatabase
     {
         public string Code { get; internal set; }
         public string Phrase { get; internal set; }
-        public byte[] PictogramImage { get; }
+        public IList<byte[]> PictogramImages { get; }
         public IList<IPCode> PCodes { get; }
         public string SignalWord { get; internal set; }
         public IList<string> Categories { get; }
@@ -15,14 +15,14 @@ namespace Techtoniq.GHSDatabase
         internal IList<HazardCategory> CategoryKeys { get; }
         internal SignalWord SignalWordKey { get; }
 
-        internal Hazard(HazardClass classKey, IList<HazardCategory> categoryKeys, byte[] pictogramImage, SignalWord signalWordKey, IList<IPCode> pCodes)
+        internal Hazard(HazardClass classKey, IList<HazardCategory> categoryKeys, IList<byte[]> pictogramImages, SignalWord signalWordKey, IList<IPCode> pCodes)
         {
             ClassKey = classKey;
             CategoryKeys = categoryKeys;
-            PictogramImage = pictogramImage;
             SignalWordKey = signalWordKey;
             PCodes = pCodes;
             Categories = new List<string>();
+            PictogramImages = pictogramImages ?? new List<byte[]>();
         }
 
         internal IHazard Copy()

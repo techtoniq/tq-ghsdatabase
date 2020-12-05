@@ -17,9 +17,16 @@ This Nuget package provides an in-memory database of hazard codes, phrases, pict
     {
         // Show the first match as an example.
 
-        MemoryStream ms = new MemoryStream(hazards[0].PictogramImage);
-        uxPictureHazardPictogram.Image = Image.FromStream(ms);
-        uxPictureHazardPictogram.SizeMode = PictureBoxSizeMode.StretchImage;
+        if(hazards[0].PictogramImages.Any())
+        {
+            MemoryStream ms = new MemoryStream(hazards[0].PictogramImages[0]);  // use the first image
+            uxPictureHazardPictogram.Image = Image.FromStream(ms);
+            uxPictureHazardPictogram.SizeMode = PictureBoxSizeMode.StretchImage;
+        }
+        else
+        {
+            uxPictureHazardPictogram.Image = null;
+        }
 
         uxTextClassValue.Text = hazards[0].Class;
         uxTextCategoryValue.Text = string.Join(", ", hazards[0].Categories);

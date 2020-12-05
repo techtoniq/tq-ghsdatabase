@@ -28,8 +28,8 @@ namespace Techtoniq.GHSDatabase.UnitTest
                 hazards[0].Class.Should().Be("Explosives");
                 hazards[0].Categories.Should().HaveCount(1);
                 hazards[0].Categories[0].Should().Be("Unstable Explosive");
-                hazards[0].PictogramImage.Should().NotBeNull();
-                hazards[0].PictogramImage.Length.Should().Be(13128);
+                hazards[0].PictogramImages[0].Should().NotBeNull();
+                hazards[0].PictogramImages[0].Length.Should().Be(13128);
                 hazards[0].SignalWord.Should().Be("Danger");
                 hazards[0].Code.Should().Be("H200");
                 hazards[0].Phrase.Should().Be("Unstable explosive.");
