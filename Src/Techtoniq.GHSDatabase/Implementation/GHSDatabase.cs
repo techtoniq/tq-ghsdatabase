@@ -51,8 +51,8 @@ namespace Techtoniq.GHSDatabase
             // Find the database entries.
 
             var hazards = FindHazardsByCode(code);
-            if(null == hazards || 0 == hazards.Count())
-                return null;
+            if(!hazards.Any())
+                return hazards;
 
             // Populate the culture-specific strings.
 
@@ -95,8 +95,8 @@ namespace Techtoniq.GHSDatabase
         private IList<IHazard> FindHazardsByCode(string code)
         {
             var values = from h in _database where h.Key.Equals(code) select h.Value;
-            if (0 == values.Count())
-                return null;
+            if (!values.Any())
+                return values.ToList();
 
             List<IHazard> hazardCopies = new List<IHazard>();
             foreach(var h in values)

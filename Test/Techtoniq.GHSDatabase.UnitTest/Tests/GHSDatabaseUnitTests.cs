@@ -72,7 +72,7 @@ namespace Techtoniq.GHSDatabase.UnitTest
             }
 
             [Test]
-            public void When_NoHazardsFound_Then_ReturnNull()
+            public void When_NoHazardsFound_Then_ReturnEmptyList()
             {
                 // Arrange.
 
@@ -80,11 +80,12 @@ namespace Techtoniq.GHSDatabase.UnitTest
 
                 // Act.
 
-                var hazard = unit.Get("wibble");
+                var hazards = unit.Get("wibble");
 
                 // Assert.
 
-                hazard.Should().BeNull();
+                hazards.Should().NotBeNull();
+                hazards.Should().BeEmpty();
             }
 
             [Test]
